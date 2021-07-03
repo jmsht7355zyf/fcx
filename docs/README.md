@@ -7,8 +7,13 @@ actionLink: /guide/
 footer: MIT Licensed | Copyright © 2018-present 郑依凡
 ---
 <center>
+<a href="https://jmsht7355zyf.github.io/blog/Note/">
 <img :src="$withBase('/wx.jpg')" alt="wx">
+</a>
 <br>
 <br>
+<a href="https://jmsht7355zyf.github.io/blog/Technology/">
 <img :src="$withBase('/tec.jpg')" alt="tec">
+</a>
 </center>
+
