@@ -4,7 +4,7 @@ title:vuepress基配置
 
 # <center>vuepress基配置</center>
 
-### 安装
+## 安装
 
 ```shell
 npm install -D vuepress
@@ -16,7 +16,7 @@ npm install -D vuepress
 npm init
 ```
 
-### 脚本
+## 脚本
 
 ```json
 {
@@ -27,7 +27,7 @@ npm init
 }
 ```
 
-### 图片等公共资源路径
+## 图片等公共资源路径
 
 公共资源一般放在public文件夹，在markdown中引用，一般使用以下路径
 
@@ -35,7 +35,7 @@ npm init
 <img :src="$withBase('/test.png')" alt="test">
 ```
 
-### 部署到GitHub pages
+## 部署到GitHub pages
 
 在根目录下，新建脚步文件deploy.sh
 
@@ -67,27 +67,27 @@ git commit -m 'deploy'
 cd -
 ```
 
-### 配置
+## 配置
 
-#### base
+### base
 
 部署站点的基础路径，如果你想让你的网站部署到一个子路径下，你将需要设置它。如 GitHub pages，如果你想将你的网站部署到 `https://foo.github.io/bar/`，那么 `base` 应该被设置成 `"/bar/"`
 
-####  title
+###  title
 
 网站的标题，它将会被用作所有页面标题的前缀，同时，默认主题下，它将显示在导航栏（navbar）上。
 
-####  description
+###  description
 
 网站的描述，它将会以 `<meta>` 标签渲染到当前页面的 HTML 中。
 
-### 主题
+## 主题
 
-#### themeConfig
+### themeConfig
 
 为当前的主题提供一些配置，这些选项依赖于你正在使用的主题。
 
-#### 基本配置
+### 基本配置
 
 默认主题配置详情查询官网[相关配置](https://vuepress.vuejs.org/zh/theme/default-theme-config.html)
 
