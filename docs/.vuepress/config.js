@@ -1,6 +1,7 @@
 module.exports = {
     title: '凡尘轩',
     description: '凡尘若水，冷暖自知',
+    base: '/blog/' ,
     plugins: {
         "vuepress-plugin-auto-sidebar": {}
       },
