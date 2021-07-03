@@ -2,7 +2,9 @@
 <center><h5>花有重开日，人无再少年</h5></center>
 
 <center>
+<a href="https://jmsht7355zyf.github.io/blog/Note/">
 <img :src="$withBase('/note.jpg')" alt="note">
+</a>
 <br>
 </center>
 
@@ -15,7 +17,9 @@
 
 
 <center>
+<a href="https://jmsht7355zyf.github.io/blog/Technology/">
 <img :src="$withBase('/tec.jpg')" alt="tec">
+</a>
 <br>
 </center>
 
