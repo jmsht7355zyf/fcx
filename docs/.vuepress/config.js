@@ -7,6 +7,7 @@ module.exports = {
       },
     themeConfig: {
         // logo: '/public/logo.png',
+        smoothScroll: true,
         displayAllHeaders: true ,
         sidebar: 'auto',
         '/zh/': {
