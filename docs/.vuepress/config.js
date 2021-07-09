@@ -5,7 +5,7 @@ module.exports = {
     head:[
       ['mata ', {'http-equiv':"Pragma",content:"no-cache"}],
       ['mata ', {'http-equiv':"Cache-Control",content:"no-cache"}],
-      ['mata ', {'http-equiv':"Expires",content:"0"}],
+      ['mata  ', {'http-equiv':"Expires",content:"0"}],
     ],
     plugins: {
         "vuepress-plugin-auto-sidebar": {}
