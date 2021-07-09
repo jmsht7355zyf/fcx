@@ -6,6 +6,7 @@ actionText: 点击进入浏览 >
 actionLink: /guide/
 footer: MIT Licensed | Copyright © 2018-present 郑依凡
 ---
+
 <center>
 <a href="https://jmsht7355zyf.github.io/blog/Note/">
 <img :src="$withBase('/wx.jpg')" alt="wx">
