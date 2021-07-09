@@ -4,8 +4,6 @@ title:vim简单配置
 
 # <center>vim简单配置</center>
 
-***
-
 ## vim配置文件存放位置
 
 系统vimrc配置文件存放在Vim的安装目录，默认路径为/usr/share/vim/.vimrc。

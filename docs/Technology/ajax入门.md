@@ -1,7 +1,5 @@
 # <center>Ajax入门</center>
 
-***
-
 ## ajax定义与使用范围与作用
 
 定义：异步的JavaScript和xml。
