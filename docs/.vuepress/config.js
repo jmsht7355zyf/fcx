@@ -2,6 +2,11 @@ module.exports = {
     title: '凡尘轩',
     description: '凡尘若水，冷暖自知',
     base: '/blog/' ,
+    head:[
+      ['mata ', {'http-equiv':"Pragma",content:"no-cache"}],
+      ['mata ', {'http-equiv':"Cache-Control",content:"no-cache"}],
+      ['mata ', {'http-equiv':"Expires",content:"0"}],
+    ],
     plugins: {
         "vuepress-plugin-auto-sidebar": {}
       },

@@ -8,11 +8,11 @@
 <br>
 </center>
 
-> 时光荏苒，随缘如梭
-> 记忆的列车，仍在思念上轰鸣
-> 车站的你，是否还在为我流连
-> 一梦三十年，月光下的你，影子希白
-> 我愿摘下自己的防备，独留下忧愁
+> 时光荏苒，随缘如梭，
+> 记忆的列车，仍在思念上轰鸣，
+> 车站的你，是否还在为我流连，
+> 一梦三十年，月光下的你，影子希白，
+> 我愿摘下自己的防备，独留下忧愁与等待。
 
 # <center>技术之家</center>
 <center><h5>天道必酬勤，书山勤为路</h5></center>
@@ -24,7 +24,7 @@
 <br>
 </center>
 
-> 前端：JavaScript、typescript、node.js、html、css、vue
-> 后端：python
-> 工具概念：vim、git、markdown
+> 前端：JavaScript、typescript、node.js、html、css、vue；
+> 后端：python；
+> 工具概念：vim、git、markdown。
 
