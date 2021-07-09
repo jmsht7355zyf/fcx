@@ -1,6 +1,8 @@
 # <center>记忆相片</center>
 <center><h5>花有重开日，人无再少年</h5></center>
 
+***
+
 <center>
 <a href="https://jmsht7355zyf.github.io/blog/Note/">
 <img :src="$withBase('/note.jpg')" alt="note">
@@ -16,6 +18,8 @@
 
 # <center>技术之家</center>
 <center><h5>天道必酬勤，书山勤为路</h5></center>
+
+***
 
 <center>
 <a href="https://jmsht7355zyf.github.io/blog/Technology/">
