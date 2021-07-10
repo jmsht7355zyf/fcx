@@ -15,8 +15,6 @@
 
 </a>
 
-</a>
-
 <a href="./vuepress基础配置.html">
 
 <img :src="$withBase('/vuepress.png')" alt="vuepress">
@@ -24,4 +22,12 @@
 </a>
 
 ## 前端相关技术
+
+前端基础相关技术及延申：
+
+<a href="./vuepress基础配置.html">
+
+<img :src="$withBase('/ajax.png')" alt="ajax">
+
+</a>
 
