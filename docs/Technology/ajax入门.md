@@ -26,3 +26,118 @@
 
 同样用于数据的传输与存储，已取代XML。
 
+##  HTTP协议
+
+定义：超文本传输协议。
+
+### **请求**：
+
+- 请求行：
+
+  ​	请求类型（GET、POST等）+  url + HTTP协议版本
+
+- 请求头
+
+- 请求空行
+
+- 请求体
+
+### 响应：
+
+- 响应行：
+- 响应头
+- 响应空行
+- 响应体
+
+### 浏览器检查
+
+<img :src="$withBase('/post1.png')" alt="post">
+<br>
+
+<img :src="$withBase('/post2.png')" alt="post">
+<br>
+
+## Express框架
+
+### 安装
+
+```shell
+npm install express
+```
+
+### 使用
+
+```javascript
+//1.引入express
+const express = require('express');
+//2.创建应用对象
+const app = express();
+//3.创建路由规则
+//reguest 是对请求报文的封装
+//response 是对响应报文的封装
+app.get('/',(reguest,response)=>{
+    //设置响应
+    response.send('HELLO EXPRESS');
+});
+//4.监听端口启动服务
+app.listen(8000,()=>{
+    console.log("服务已启动，8080端口监听中……");
+})
+```
+
+### 启动
+
+```shell
+node + 上述js文件
+```
+
+## ajax操作基本步骤
+
+### **简单案例-发送get请求**
+
+源代码请到文件夹test/7.10/请求案例1get.html
+
+```javascript
+  //获取button元素
+        const btn = document.getElementsByTagName('button')[0];
+        const result = document.getElementById("result");
+        //绑定事件
+        btn.onclick = function () {
+            //1.创建对象
+            const xhr = new XMLHttpRequest();
+            //2.初始化 设置请求方法和url
+            xhr.open('GET', 'http://127.0.0.1:8000/server');
+            //3.发送
+            xhr.send();
+            //4.事件绑定 处理服务器返回的结果
+            xhr.onreadystatechange = function () {
+                //判断 （服务端返回了所有的结果）
+                if (xhr.readyState === 4) {
+                    //判断响应状态码 200 404 403 401 500 等
+                    //2XX 成功
+                    if(xhr.status >= 200 && xhr.status <300){
+                        //处理结果 行 头 空行 体
+                        //响应行
+                        // console.log(xhr.status); //状态码
+                        // console.log(xhr.statusText); //状态字符串
+                        // console.log(xhr.getAllResponseHeaders());//所有响应头
+                        // console.log(xhr.response);//响应体
+                        
+                        //设置result 文本
+                        result.innerHTML = xhr.response;
+                    }else{
+                    
+                    }
+                }
+            }
+
+        }
+```
+
+####  参数设置
+
+```javascript
+xhr.open('GET', 'http://127.0.0.1:8000/server?a=100&b=200&c=300');
+```
+### **简单案例-发送post请求**
+

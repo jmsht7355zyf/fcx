@@ -25,7 +25,7 @@
 
 前端基础相关技术及延申：
 
-<a href="./vuepress基础配置.html">
+<a href="./ajax入门.html">
 
 <img :src="$withBase('/ajax.png')" alt="ajax">
 
