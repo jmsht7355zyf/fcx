@@ -51,7 +51,13 @@
 
 ### 浏览器检查
 
+<br>
+
 <img :src="$withBase('/post1.png')" alt="post">
+<br>
+
+<br>
+
 <br>
 
 <img :src="$withBase('/post2.png')" alt="post">
