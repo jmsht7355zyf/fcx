@@ -101,7 +101,7 @@ node + 上述js文件
 
 ### **简单案例-发送get请求**
 
-源代码请到文件夹test/7.10/请求案例1get.html
+源代码请到文件夹test/2021.7.10/请求案例1get.html
 
 ```javascript
   //获取button元素
@@ -146,4 +146,41 @@ node + 上述js文件
 xhr.open('GET', 'http://127.0.0.1:8000/server?a=100&b=200&c=300');
 ```
 ### **简单案例-发送post请求**
+
+源代码请到文件夹test/2021.7.11/post请求.html
+
+```javascript
+ //获取元素对象
+        const result = document.getElementById("result");
+        //绑定事件
+        result.addEventListener("mouseover",function(){
+            //1.创建对象
+            const xhr = new XMLHttpRequest();
+            //2.初始化 设置类型与url
+            xhr.open('POST','http://127.0.0.1:8000/server');
+            //3.发送
+            xhr.send();
+            //4.事件绑定
+            xhr.onreadystatechange = function(){
+                //判断 （服务端返回了所有的结果）
+                if (xhr.readyState === 4) {
+                    //判断响应状态码 200 404 403 401 500 等
+                    //2XX 成功
+                    if(xhr.status >= 200 && xhr.status <300){
+                        //处理结果 行 头 空行 体
+                        //响应行
+                        // console.log(xhr.status); //状态码
+                        // console.log(xhr.statusText); //状态字符串
+                        // console.log(xhr.getAllResponseHeaders());//所有响应头
+                        // console.log(xhr.response);//响应体
+
+                        //设置result 文本
+                        result.innerHTML = xhr.response;
+                    }else{
+
+                    }
+                }
+            }
+        });
+```
 

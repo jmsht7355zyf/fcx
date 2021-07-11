@@ -31,3 +31,15 @@
 
 </a>
 
+<a href="./axios入门.html">
+
+<img :src="$withBase('/axios.png')" alt="axios">
+
+</a>
+
+<a href="./vue基础入门.html">
+
+<img :src="$withBase('/vue.png')" alt="vue">
+
+</a>
+
