@@ -101,8 +101,6 @@ node + 上述js文件
 
 ### **简单案例-发送get请求**
 
-源代码请到文件夹test/2021.7.10/请求案例1get.html
-
 ```javascript
   //获取button元素
         const btn = document.getElementsByTagName('button')[0];
@@ -146,8 +144,6 @@ node + 上述js文件
 xhr.open('GET', 'http://127.0.0.1:8000/server?a=100&b=200&c=300');
 ```
 ### **简单案例-发送post请求**
-
-源代码请到文件夹test/2021.7.11/post请求.html
 
 ```javascript
  //获取元素对象
