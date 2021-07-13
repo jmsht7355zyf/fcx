@@ -1,3 +1,8 @@
+---
+title: Ajax入门
+sidebar: auto
+---
+
 # <center>Ajax入门</center>
 
 ## ajax定义与使用范围与作用

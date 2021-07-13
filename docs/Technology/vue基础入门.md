@@ -1,3 +1,8 @@
+---
+title: Vue基础入门
+sidebar: auto
+---
+
 # <center>Vue 基础入门</center>
 
 ## 安装3.0版本

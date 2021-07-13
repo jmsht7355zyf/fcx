@@ -1,5 +1,6 @@
 ---
-title:git基础及命令
+title: git基础及命令
+sidebar: auto
 ---
 
 # <center>git基础及命令</center>

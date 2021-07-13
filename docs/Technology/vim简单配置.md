@@ -1,5 +1,6 @@
 ---
-title:vim简单配置
+title: vim简单配置
+sidebar: auto
 ---
 
 # <center>vim简单配置</center>

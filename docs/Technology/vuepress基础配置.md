@@ -1,5 +1,6 @@
 ---
-title:vuepress基配置
+title: vuepress基配置
+sidebar: auto
 ---
 
 # <center>vuepress基配置</center>

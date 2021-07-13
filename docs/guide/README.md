@@ -1,14 +1,16 @@
+---
+title: 首页引导
+---
+
 # <center>记忆相片</center>
+
 <center><h5>花有重开日，人无再少年</h5></center>
 
 ***
 
-<center>
-<a href="https://jmsht7355zyf.github.io/blog/Note/">
-<img :src="$withBase('/note.jpg')" alt="note">
-</a>
+[![note](../.vuepress/public/note.jpg)](../Note/README.md) 
 <br>
-</center>
+
 
 > 时光荏苒，随缘如梭，
 > 记忆的列车，仍在思念上轰鸣，
@@ -21,12 +23,9 @@
 
 ***
 
-<center>
-<a href="https://jmsht7355zyf.github.io/blog/Technology/">
-<img :src="$withBase('/tec.jpg')" alt="tec">
-</a>
+[![technology](../.vuepress/public/tec.jpg)](../Technology/README.md) 
 <br>
-</center>
+
 
 > 前端：JavaScript、typescript、node.js、html、css、vue；
 > 后端：python；

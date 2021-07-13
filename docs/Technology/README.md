@@ -1,45 +1,18 @@
+---
+title: 技术胶囊
+sidebar: auto
+---
+
 # 技术胶囊
 
 ## 基础相关技术
 非前后端相关技术，而是代码类、工程类必备知识、工具内容：
 
-<a href="./vim简单配置.html">
-
-<img :src="$withBase('/vimpz.png')" alt="vim">
-
-</a>
-
-<a href="./git基础及命令.html">
-
-<img :src="$withBase('/gitbase.png')" alt="git">
-
-</a>
-
-<a href="./vuepress基础配置.html">
-
-<img :src="$withBase('/vuepress.png')" alt="vuepress">
-
-</a>
+[![vim](../.vuepress/public/vimpz.png)](vim简单配置.md) 	[![git](../.vuepress/public/gitbase.png)](git基础及命令.md)		[![vuepress](../.vuepress/public/vuepress.png)](vuepress基础配置.md)
 
 ## 前端相关技术
 
 前端基础相关技术及延申：
 
-<a href="./ajax入门.html">
-
-<img :src="$withBase('/ajax.png')" alt="ajax">
-
-</a>
-
-<a href="./axios入门.html">
-
-<img :src="$withBase('/axios.png')" alt="axios">
-
-</a>
-
-<a href="./vue基础入门.html">
-
-<img :src="$withBase('/vue.png')" alt="vue">
-
-</a>
+[![ajax](../.vuepress/public/ajax.png)](ajax入门.md)		[![axios](../.vuepress/public/axios.png)](axios入门.md)		[![vue](../.vuepress/public/vue.png)](vue基础入门.md)
 
