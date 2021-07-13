@@ -3,9 +3,9 @@ module.exports = {
     description: '凡尘若水，冷暖自知',
     base: '/blog/' ,
     // head头
-    head:[
+    head: [
       ['mata ', {'http-equiv':"Pragma",content:"no-cache"}],
-      ['mata ', {'http-equiv':"Cache-Control",content:"no-cache"}],
+      ['mata ', {'http-equiv':"Cache-Control",content:"no-cache,must-revalidate"}],
       ['mata  ', {'http-equiv':"Expires",content:"0"}],
     ],
     plugins: {
