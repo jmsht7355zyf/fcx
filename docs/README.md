@@ -9,6 +9,7 @@ sidebar: auto
 ---
 <center>
 <h1>武侠世界  心向往之</h1>
+    <hr />
 <font color =#6AB389> 
 <h4>个人小说著作，仅供个人娱乐</h4>
 </font>
@@ -18,6 +19,7 @@ sidebar: auto
 <br>
 <br>
 <h1>学海无涯  技术为辅</h1>
+    <hr />
 <font color =#6AB389>
 <h4>计算机入门行业技术，仅供个人查阅参考，非官方文档</h4>
 </font>
@@ -27,3 +29,4 @@ sidebar: auto
 <br>
 <br>
 </center>
+

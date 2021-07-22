@@ -30,7 +30,7 @@ npm init
 
 ## 图片等公共资源路径
 
-公共资源一般放在public文件夹，在markdown中引用，一般使用以下路径：
+公共资源一般放在public文件夹，在`markdown`中引用，一般使用以下路径：
 
 ```html
 <img :src="$withBase('/test.png')" alt="test">
@@ -38,7 +38,7 @@ npm init
 
 ## 部署到GitHub pages
 
-在根目录下，新建脚步文件deploy.sh。
+在根目录下，新建脚步文件`deploy.sh`。
 
 ```shell
 #!/usr/bin/env sh
@@ -72,15 +72,15 @@ cd -
 
 ### base
 
-部署站点的基础路径，如果你想让你的网站部署到一个子路径下，你将需要设置它。如 GitHub pages，如果你想将你的网站部署到 `https://foo.github.io/bar/`，那么 `base` 应该被设置成 `"/bar/"`。
+部署站点的基础路径，如果你想让你的网站部署到一个子路径下，你将需要设置它。如` GitHub pages`，如果你想将你的网站部署到 `https://foo.github.io/bar/`，那么 `base` 应该被设置成 `"/bar/"`。
 
 ###  title
 
-网站的标题，它将会被用作所有页面标题的前缀，同时，默认主题下，它将显示在导航栏（navbar）上。
+网站的标题，它将会被用作所有页面标题的前缀，同时，默认主题下，它将显示在导航栏（`navbar`）上。
 
 ###  description
 
-网站的描述，它将会以 `<meta>` 标签渲染到当前页面的 HTML 中。
+网站的描述，它将会以 `<meta>` 标签渲染到当前页面的` HTML` 中。
 
 ## 主题
 
