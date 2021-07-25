@@ -5,7 +5,7 @@ sidebar: auto
 
 # <center>Ajax入门</center>
 
-## ajax定义与使用范围与作用
+## `ajax`定义与使用范围与作用
 
 定义：异步的`JavaScript`和`xml`。
 
@@ -23,15 +23,15 @@ sidebar: auto
 2. 存在跨域问题（同源）。
 3. `SEO`不友好。
 
-## XML
+## `XML`
 
 定义：可拓展标记语言（用于传输和存储数据）。
 
-## json
+## `json`
 
 同样用于数据的传输与存储，已取代`XML`。
 
-##  HTTP协议
+##  `HTTP`协议
 
 定义：超文本传输协议。
 
@@ -68,7 +68,7 @@ sidebar: auto
 <img :src="$withBase('/post2.png')" alt="post">
 <br>
 
-## Express框架
+## `Express`框架
 
 ### 安装
 
@@ -102,9 +102,9 @@ app.listen(8000,()=>{
 node + 上述js文件
 ```
 
-## ajax操作基本步骤
+## `ajax`操作基本步骤
 
-### **简单案例-发送get请求**
+### **简单案例-发送`get`请求**
 
 ```javascript
   //获取button元素
@@ -148,7 +148,7 @@ node + 上述js文件
 ```javascript
 xhr.open('GET', 'http://127.0.0.1:8000/server?a=100&b=200&c=300');
 ```
-### **简单案例-发送post请求**
+### **简单案例-发送`post`请求**
 
 ```javascript
  //获取元素对象
