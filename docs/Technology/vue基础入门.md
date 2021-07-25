@@ -12,7 +12,7 @@ sidebar: auto
 ## 安装3.0版本
 
 更多安装方式请访问[**官方文档**](https://v3.cn.vuejs.org/guide/introduction.html)。
-### `npm`安装
+### npm安装
 
 ```shell
 npm install vue@next
@@ -26,11 +26,11 @@ npm install vue@next
 
 详细内容可访问[相关文档](https://v3.cn.vuejs.org/guide/template-syntax.html#%E6%8F%92%E5%80%BC)。
 
-### `v-if `与`v-show`（条件渲染）
+### v-if 与v-show（条件渲染）
 
 `v-if`是真正的条件渲染，它会保证在切换过程中，条件块内的事件监听器和子组件适当的被销毁和重建，`v-show`不管初始条件是什么，元素总是会被渲染，并且只是简单地基于`css`进行切换，如果需要频繁切换`v-show`较为实用。
 
-### `v-if`
+### v-if
 
 根据表达式的真假值来有条件地渲染元素。在切换时元素及它的数据绑定 / 组件被销毁并重建。如果元素是 `<template>`，将提取它的内容作为条件块。
 
@@ -40,15 +40,15 @@ npm install vue@next
 
 3.x 版本中 `v-if` 总是优先于 `v-for` 生效。
 
-### `v-show`
+### v-show
 
 根据表达式的真假值，切换元素的 `display` `CSS property`。
 
 当条件变化时该指令触发过渡效果。
 
-### `v-for `遍历（列表渲染）
+### v-for 遍历（列表渲染）
 
-### `v-for`
+### v-for
 
 基于源数据多次渲染元素或模板块。此指令之值，必须使用特定语法 `alias in expression`，为当前遍历的元素提供别名：
 
@@ -98,11 +98,11 @@ Vue.createApp({
 
 详细内容可访问[列表渲染](https://v3.cn.vuejs.org/guide/list.html#%E7%94%A8-v-for-%E6%8A%8A%E4%B8%80%E4%B8%AA%E6%95%B0%E7%BB%84%E5%AF%B9%E5%BA%94%E4%B8%BA%E4%B8%80%E7%BB%84%E5%85%83%E7%B4%A0)。
 
-### `v-bind`（Class 与 Style 绑定）
+### v-bind（Class 与 Style 绑定）
 
 操作元素的 class 列表和内联样式是数据绑定的一个常见需求。因为它们都是 attribute，所以我们可以用 `v-bind` 处理它们：只需要通过表达式计算出字符串结果即可。不过，字符串拼接麻烦且易错。因此，在将 `v-bind` 用于 `class` 和 `style` 时，`Vue.js` 做了专门的增强。表达式结果的类型除了字符串之外，还可以是对象或数组.
 
-### `v-bind`
+### v-bind
 
 动态地绑定一个或多个 attribute，或一个组件 `prop` 到表达式。
 
@@ -114,7 +114,7 @@ Vue.createApp({
 
 详细内容可访问[Class 与 Style 绑定](https://v3.cn.vuejs.org/guide/class-and-style.html#%E7%BB%91%E5%AE%9A-html-class)。
 
-### `v-on`（事件处理）
+### v-on（事件处理）
 
 我们可以使用 `v-on` 指令 (通常缩写为 `@` 符号) 来监听 DOM 事件，并在触发事件时执行一些 `JavaScript`。用法为 `v-on:click="methodName"` 或使用快捷方式 `@click="methodName"`。
 
@@ -124,7 +124,7 @@ Vue.createApp({
 
 详细内容可访问[事件处理](https://v3.cn.vuejs.org/guide/events.html)。
 
-### `v-model`（双向绑定）
+### v-model（双向绑定）
 
 ## 计算属性
 
@@ -150,7 +150,7 @@ Vue.createApp({
 
 详细内容可访问[全局注册](https://v3.cn.vuejs.org/guide/component-registration.html#%E5%85%A8%E5%B1%80%E6%B3%A8%E5%86%8C)和[局部注册](https://v3.cn.vuejs.org/guide/component-registration.html#%E5%B1%80%E9%83%A8%E6%B3%A8%E5%86%8C)。
 
-### 父子组件与组件传值（`Prop`）
+### 父子组件与组件传值（Prop）
 
 #### 基本通信原则
 
@@ -164,7 +164,7 @@ Vue.createApp({
 3. 消息订阅与发布
 4. `vuex`
 
-#### `props`
+#### props
 
 1. 只指定名称
 2. 指定名称和类型
@@ -185,7 +185,7 @@ Vue.createApp({
 1. 该方法只适用于子组件向父组件发送消息。
 2. 不适用于隔代组件或兄弟组件间通信。
 
-#### `$root`与`$parent`的使用
+#### $root与$parent的使用
 
 ###  动态组件 & 异步组件
 
@@ -220,7 +220,7 @@ Vue.createApp({
   1. 父组件替换插槽中的标签。
   2. 使用的是子组件中的数据。
 
-## `vue`过度动画
+## Vue过度动画
 
 `Vue `提供了一些抽象概念，可以帮助处理过渡和动画，特别是在响应某些变化时。这些抽象的概念包括：
 
@@ -231,7 +231,7 @@ Vue.createApp({
 
 详细内容可访问[过渡动画](https://v3.cn.vuejs.org/guide/transitions-overview.html)。
 
-## 组合式`API`
+## 组合式API
 
 详细内容可访问[组合式API](https://v3.cn.vuejs.org/guide/composition-api-introduction.html#%E7%BB%84%E5%90%88%E5%BC%8F-api-%E5%9F%BA%E7%A1%80)。
 
@@ -254,9 +254,9 @@ Vue.createApp({
 
 详细内容可访问[渲染函数](https://v3.cn.vuejs.org/guide/render-function.html)。
 
-## `Vue`工程化基础
+## Vue工程化基础
 
-### `Vue-cli`
+### Vue-cli
 
 `Vue CLI` 是一个基于 `Vue.js` 进行快速开发的完整系统。对于`vue3.x`，要使用`npm`上可用`vue-cli 4.5v`以上
 
@@ -268,7 +268,7 @@ npm install -g @vue/cli
 
 详细内容可访问[Vue-cli官方文档](https://cli.vuejs.org/)
 
-### `Vite`
+### Vite
 
 `Vite `(法语意为 "快速的"，发音 `/vit/`) 是一种新型前端构建工具，能够显著提升前端开发体验。
 
@@ -282,7 +282,7 @@ npm init vite@latest
 
 详细内容可访问[Vite官方文档](https://cn.vitejs.dev/)。
 
-### `Vue Router`
+### Vue Router
 
 `Vue Router` 是 [Vue.js](http://v3.vuejs.org/) 的官方路由。它与` Vue.js `核心深度集成，让用` Vue.js `构建单页应用变得轻而易举。功能包括：
 
