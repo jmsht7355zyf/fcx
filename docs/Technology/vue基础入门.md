@@ -150,7 +150,7 @@ Vue.createApp({
 
 详细内容可访问[全局注册](https://v3.cn.vuejs.org/guide/component-registration.html#%E5%85%A8%E5%B1%80%E6%B3%A8%E5%86%8C)和[局部注册](https://v3.cn.vuejs.org/guide/component-registration.html#%E5%B1%80%E9%83%A8%E6%B3%A8%E5%86%8C)。
 
-### 父子组件与组件传值（`Proop`）
+### 父子组件与组件传值（`Prop`）
 
 #### 基本通信原则
 
@@ -175,7 +175,7 @@ Vue.createApp({
 1. 数据验证。
 2. 用于父组件向子组件传值。
 3. 所有标签属性都会成为组件对象的属性，模板页面可以直接引用。
-4. 如果需要向非子后代传递数据必须多层逐级传递
+4. 如果需要向非子后代传递数据必须多层逐级传递。
 5. 兄弟组件间不能直接Props通信，必须借助父组件才能实现。
 
 详细内容可访问[Props](https://v3.cn.vuejs.org/guide/component-props.html)。
@@ -189,7 +189,7 @@ Vue.createApp({
 
 ###  动态组件 & 异步组件
 
-详细内容可访问[动态组件 & 异步组件](https://v3.cn.vuejs.org/guide/component-dynamic-async.html)
+详细内容可访问[动态组件 & 异步组件](https://v3.cn.vuejs.org/guide/component-dynamic-async.html)。
 
 ### 组件的生命周期
 
@@ -211,14 +211,14 @@ Vue.createApp({
 
 #### 作用域插槽
 
-详细内容可访问[作用域插槽](https://v3.cn.vuejs.org/guide/component-slots.html#%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD)
+详细内容可访问[作用域插槽](https://v3.cn.vuejs.org/guide/component-slots.html#%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD)。
 
 - 渲染作用域
   1. 父级模板里的所有内容都是在父级作用域中编译。
   2. 子模板里的所有内容都是在子作用域中编译的。
 - 作用域插槽的使用
-  1. 父组件替换插槽中的标签
-  2. 使用的是子组件中的数据
+  1. 父组件替换插槽中的标签。
+  2. 使用的是子组件中的数据。
 
 ## `vue`过度动画
 
@@ -229,11 +229,11 @@ Vue.createApp({
 - 在处理多个元素位置更新时，使用 `<transition-group>` 组件，通过 FLIP 技术来提高性能。
 - 使用 `watchers` 来处理应用中不同状态的过渡。
 
-详细内容可访问[过渡动画](https://v3.cn.vuejs.org/guide/transitions-overview.html)
+详细内容可访问[过渡动画](https://v3.cn.vuejs.org/guide/transitions-overview.html)。
 
 ## 组合式`API`
 
-详细内容可访问[组合式API](https://v3.cn.vuejs.org/guide/composition-api-introduction.html#%E7%BB%84%E5%90%88%E5%BC%8F-api-%E5%9F%BA%E7%A1%80)
+详细内容可访问[组合式API](https://v3.cn.vuejs.org/guide/composition-api-introduction.html#%E7%BB%84%E5%90%88%E5%BC%8F-api-%E5%9F%BA%E7%A1%80)。
 
 ### `Mixin`
 
@@ -253,4 +253,59 @@ Vue.createApp({
 `Vue` 推荐在绝大多数情况下使用模板来创建你的` HTML`。然而在一些场景中，你真的需要 `JavaScript` 的完全编程的能力。这时你可以用**渲染函数**，它比模板更接近编译器。
 
 详细内容可访问[渲染函数](https://v3.cn.vuejs.org/guide/render-function.html)。
+
+## `Vue`工程化基础
+
+### `Vue-cli`
+
+`Vue CLI` 是一个基于 `Vue.js` 进行快速开发的完整系统。对于`vue3.x`，要使用`npm`上可用`vue-cli 4.5v`以上
+
+#### 安装
+
+```bash
+npm install -g @vue/cli
+```
+
+详细内容可访问[Vue-cli官方文档](https://cli.vuejs.org/)
+
+### `Vite`
+
+`Vite `(法语意为 "快速的"，发音 `/vit/`) 是一种新型前端构建工具，能够显著提升前端开发体验。
+
+Vite 需要 [Node.js](https://nodejs.org) 版本 >= 12.0.0。
+
+#### 安装
+
+```shell
+npm init vite@latest
+```
+
+详细内容可访问[Vite官方文档](https://cn.vitejs.dev/)。
+
+### `Vue Router`
+
+`Vue Router` 是 [Vue.js](http://v3.vuejs.org/) 的官方路由。它与` Vue.js `核心深度集成，让用` Vue.js `构建单页应用变得轻而易举。功能包括：
+
+- 嵌套路由映射
+- 动态路由选择
+- 模块化、基于组件的路由配置
+- 路由参数、查询、通配符
+- 展示由` Vue.js `的过渡系统提供的过渡效果
+- 细致的导航控制
+- 自动激活` CSS `类的链接
+- `HTML5 history `模式或` hash` 模式
+- 可定制的滚动行为
+- `URL `的正确编码
+
+#### 安装
+
+```shell
+npm install vue-router@4
+```
+
+详细内容可访问[Vue Router官方文档](https://next.router.vuejs.org/zh/index.html)。
+
+#### 前端路由
+
+**单页面应用程序**（SPA）：整个站点只有一个网页，请求时，一次性把整个网页请求下来，找打前端路由系统，根据映射表，对应URL展示对应的页面。
 
