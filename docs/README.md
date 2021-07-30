@@ -14,7 +14,8 @@ sidebar: auto
 <h4>个人小说著作，仅供个人娱乐</h4>
 </font>
 <a href="https://jmsht7355zyf.github.io/blog/Novel/">
-<img :src="$withBase('/wx.jpg')" alt="wx">
+<img :src="$withBase('wx.jpg')" alt="wx">
+
 </a>
 <br>
 <br>
@@ -24,7 +25,8 @@ sidebar: auto
 <h4>计算机入门行业技术，仅供个人查阅参考</h4>
 </font>
 <a href="https://jmsht7355zyf.github.io/blog/Technology/">
-<img :src="$withBase('/tec.jpg')" alt="tec">
+<img :src="$withBase('tec.jpg')" alt="tec">
+
 </a>
 <br>
 <br>

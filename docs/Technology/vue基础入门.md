@@ -235,7 +235,7 @@ Vue.createApp({
 
 详细内容可访问[组合式API](https://v3.cn.vuejs.org/guide/composition-api-introduction.html#%E7%BB%84%E5%90%88%E5%BC%8F-api-%E5%9F%BA%E7%A1%80)。
 
-### `Mixin`
+### Mixin
 
 `Mixin `提供了一种非常灵活的方式，来分发 `Vue` 组件中的可复用功能。一个 `mixin `对象可以包含任意组件选项。当组件使用 `mixin` 对象时，所有` mixin `对象的选项将被“混合”进入该组件本身的选项。
 
