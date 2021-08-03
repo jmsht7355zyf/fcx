@@ -305,7 +305,57 @@ npm install vue-router@4
 
 详细内容可访问[Vue Router官方文档](https://next.router.vuejs.org/zh/index.html)。
 
+#### history 模式与hash模式的区别
+
+![history `模式或` hash` 模式](../.vuepress/public/hashHis.jpg)
+
 #### 前端路由
 
-**单页面应用程序**（SPA）：整个站点只有一个网页，请求时，一次性把整个网页请求下来，找打前端路由系统，根据映射表，对应URL展示对应的页面。
+**单页面应用程序**（SPA）：整个站点只有一个网页，请求时，一次性把整个网页请求下来，找打前端路由系统，根据映射表，对应`URL`展示对应的页面。
+
+#### 导航与路由出口
+
+**简单案例**
+
+```vue
+<template>
+    <div>
+        <!-- 导航 -->
+        <div id="nav">
+            <router-link to="/home"></router-link>
+            <router-link to="/about"></router-link>
+            <!-- 路由出口 -->
+            <router-view></router-view>
+        </div>
+    </div>
+</template>
+```
+
+#### 路由模板与重定向
+
+```javascript
+// 引入
+import {createRenderer,createWebHashHistory,createWebHistory} from 'vue-router'
+import home from './../components/Home.vue'
+import home from './../components/About.vue'
+
+// 创建路由对象
+const routers = [
+    // 路由重定向
+    {pash: '/', redirect: '/Home'},
+
+    {pash: '/', component: '/Home'},
+    {pash: '/', component:'/About'},
+]
+
+const router = createRenderer(
+    {
+        history: createWebHashHistory(),
+        routers
+    }
+)
+
+// 导出路由对象
+export default router
+```
 
