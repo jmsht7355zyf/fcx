@@ -58,14 +58,12 @@ sidebar: auto
 
 <br>
 
-<img :src="$withBase('/post1.png')" alt="post">
-<br>
+![post](../.vuepress/public/post1.jpg)
 
 <br>
 
-<br>
+![post](../.vuepress/public/post2.jpg)
 
-<img :src="$withBase('/post2.png')" alt="post">
 <br>
 
 ## Express框架
