@@ -344,8 +344,8 @@ const routers = [
     // 路由重定向
     {pash: '/', redirect: '/Home'},
 
-    {pash: '/', component: '/Home'},
-    {pash: '/', component:'/About'},
+    {pash: 'Home', component: '/Home'},
+    {pash: 'About', component:'/About'},
 ]
 
 const router = createRenderer(
@@ -358,4 +358,108 @@ const router = createRenderer(
 // 导出路由对象
 export default router
 ```
+
+#### 动态路由
+
+在某些场景下一个页面的path路径可能是不确定的。
+
+```javascript
+{pash: '/news/:id', component:'/News'},
+```
+
+#### 路由懒加载
+
+![history `模式或` hash` 模式](../.vuepress/public/ljz.jpg)
+
+```javascript
+//路由懒加载
+const Home = ()=>import('./../components/Home.vue')
+const About = ()=>import('./../components/About.vue')
+
+//另一种方式
+const routers = [
+    // 路由重定向
+    {pash: '/', redirect: '/Home'},
+
+    {pash: '/', component: '()=>import('./../components/Home.vu'},
+    {pash: '/', component: '()=>import('./../components/About.vue'},
+]
+```
+
+#### 路由嵌套
+
+```javascript
+// 引入
+import {createRenderer,createWebHashHistory,createWebHistory} from 'vue-router'
+import home from './../components/Home.vue'
+import About from './../components/About.vue'
+import News from './../components/News.vue'
+import Msg from './../components/Msg.vue'
+import Order from './../components/Order.vue'
+
+// 创建路由对象
+const routers = [
+    // 路由重定向
+    {pash: '/', redirect: '/Home'},
+
+    {pash: '/', component: '/Home'},
+    {pash: 'About', component:'/About'},
+    {pash: 'News', 
+     component:'/News'
+     children: [
+    	 //路由重定向
+     	{pash: '/News', redirect: '/News/Msg'},
+    	//子路由
+     	{path:'Msg',component:Msg},
+    	{path:'Order',component:Order},
+     ]
+    },
+]
+```
+
+#### 参数传递
+
+![history `模式或` hash` 模式](../.vuepress/public/cscd.jpg)
+
+#### Router与Route对象
+
+![history `模式或` hash` 模式](../.vuepress/public/route-router.jpg)
+
+#### 全局守卫
+
+**路由（导航）守卫**
+
+```javascript
+//全局路由前置守卫
+router.beforeEach(
+    guard:(to:RouteLocationNormalized,
+    from:RouteLocationNormalized,
+    next:NavigationGuardNext)=>{
+    //放行
+    next()
+}
+)
+//全局路由后置守卫
+router.afterEach(
+    guard:(to:RouteLocationNormalized,
+    from:RouteLocationNormalized)=>{
+}
+)
+```
+
+**组件内的守卫**
+
+详细内容可访问[组件内的守卫](https://next.router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E7%BB%84%E4%BB%B6%E5%86%85%E7%9A%84%E5%AE%88%E5%8D%AB)
+
+#### keep-alive 过度动效
+
+```vue
+<router-view v-slot="{ Component }">
+    <keep-alive>
+      <component :is="Component" />
+    </keep-alive>
+</router-view>
+```
+
+### Promise
 

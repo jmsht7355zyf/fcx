@@ -58,11 +58,11 @@ sidebar: auto
 
 <br>
 
-![post](../.vuepress/public/post1.jpg)
+![post](../.vuepress/public/post1.png)
 
 <br>
 
-![post](../.vuepress/public/post2.jpg)
+![post](../.vuepress/public/post2.png)
 
 <br>
 
