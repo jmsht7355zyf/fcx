@@ -463,3 +463,128 @@ router.afterEach(
 
 ### Promise
 
+![history `模式或` hash` 模式](../.vuepress/public/promise-1.jpg)
+
+#### 三种状态
+
+![history `模式或` hash` 模式](../.vuepress/public/promise-2.jpg)
+
+###  Axios
+
+#### 安装
+
+```shell
+npm install axios
+```
+
+#### 发起get请求
+
+```javascript
+import axios from 'axios'
+export default{
+    setup() {
+        
+        const getReq = ()=>{
+            // 发起get请求
+            //方法1
+          //  axios.get(url,'www.demo.com',config).then((res)=>{
+           // 	params: {
+        //   		 id: zy001,
+         //  		 name: 'fcx'
+     //   }
+
+         //   }).catch((error)=>{
+         //       console.log(error);
+         //   })
+             //方法2
+            axios({
+                method: 'get',
+                url: 'https://www.demo.com',
+                params: {
+        			id: zy001,
+   		 			name: 'fcx'
+    				  }
+            }).then((res)=>{
+                
+            }).catch((error)=>{
+                
+            })
+        }
+       return {
+           getReq
+       }
+        
+    }
+}
+```
+
+#### 发起post请求
+
+```javascript
+axios({
+        method: 'post',
+        url: 'https://www.demo.com',
+        data: {
+        			id: zy001,
+   		 			name: 'fcx'
+    				  }
+         }).then((res)=>{
+                
+         }).catch((error)=>{
+                
+         })
+```
+
+#### 并发请求
+
+```javascript
+const allReq = ()=>{
+    axios.all([
+        //并发多个get请求
+        axios({url:https://www.demo1.com }),
+        axios({url:https://www.demo2.com }),
+    ]).then((res)=>{
+            
+    }).catch((error)=>{
+            
+        })
+}
+```
+
+#### 常用配置选项
+
+![history `模式或` hash` 模式](../.vuepress/public/axios-1.jpg)
+
+#### 全局配置
+
+```javascript
+import axios from 'axios'
+export default{
+    setup() {
+        axios.defults.baseURL = 'https://www.demo.com/api'
+        axios.defults.timeout = 1000ms
+        const getReq = ()=>{
+          
+            axios({
+                method: 'get',
+                url: 'https://www.demo.com',
+                params: {
+        			id: zy001,
+   		 			name: 'fcx'
+    				  }
+            }).then((res)=>{
+                
+            }).catch((error)=>{
+                
+            })
+        }
+       return {
+           getReq
+       }
+        
+    }
+}
+```
+
+详细内容访问[Axios中文文档](http://www.axios-js.com/zh-cn/docs/)
+
