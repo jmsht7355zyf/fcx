@@ -342,10 +342,10 @@ import home from './../components/About.vue'
 // 创建路由对象
 const routers = [
     // 路由重定向
-    {pash: '/', redirect: '/Home'},
+    {path: '/', redirect: '/Home'},
 
-    {pash: 'Home', component: '/Home'},
-    {pash: 'About', component:'/About'},
+    {path: 'Home', component: '/Home'},
+    {path: 'About', component:'/About'},
 ]
 
 const router = createRenderer(
@@ -364,7 +364,7 @@ export default router
 在某些场景下一个页面的path路径可能是不确定的。
 
 ```javascript
-{pash: '/news/:id', component:'/News'},
+{path: '/news/:id', component:'/News'},
 ```
 
 #### 路由懒加载
@@ -379,10 +379,10 @@ const About = ()=>import('./../components/About.vue')
 //另一种方式
 const routers = [
     // 路由重定向
-    {pash: '/', redirect: '/Home'},
+    {path: '/', redirect: '/Home'},
 
-    {pash: '/', component: '()=>import('./../components/Home.vu'},
-    {pash: '/', component: '()=>import('./../components/About.vue'},
+    {path: '/', component: '()=>import('./../components/Home.vu'},
+    {path: '/', component: '()=>import('./../components/About.vue'},
 ]
 ```
 
@@ -400,15 +400,15 @@ import Order from './../components/Order.vue'
 // 创建路由对象
 const routers = [
     // 路由重定向
-    {pash: '/', redirect: '/Home'},
+    {path: '/', redirect: '/Home'},
 
-    {pash: '/', component: '/Home'},
-    {pash: 'About', component:'/About'},
-    {pash: 'News', 
+    {path: '/', component: '/Home'},
+    {path: 'About', component:'/About'},
+    {path: 'News', 
      component:'/News'
      children: [
     	 //路由重定向
-     	{pash: '/News', redirect: '/News/Msg'},
+     	{path: '/News', redirect: '/News/Msg'},
     	//子路由
      	{path:'Msg',component:Msg},
     	{path:'Order',component:Order},
