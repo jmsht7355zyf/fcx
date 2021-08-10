@@ -369,7 +369,7 @@ export default router
 
 #### 路由懒加载
 
-![history `模式或` hash` 模式](../.vuepress/public/ljz.jpg)
+![懒加载](../.vuepress/public/ljz.jpg)
 
 ```javascript
 //路由懒加载
@@ -419,11 +419,11 @@ const routers = [
 
 #### 参数传递
 
-![history `模式或` hash` 模式](../.vuepress/public/cscd.jpg)
+![参数传递](../.vuepress/public/cscd.jpg)
 
 #### Router与Route对象
 
-![history `模式或` hash` 模式](../.vuepress/public/route-router.jpg)
+![route and router](../.vuepress/public/route-router.jpg)
 
 #### 全局守卫
 
@@ -463,11 +463,11 @@ router.afterEach(
 
 ### Promise
 
-![history `模式或` hash` 模式](../.vuepress/public/promise-1.jpg)
+![promise](../.vuepress/public/promise-1.jpg)
 
 #### 三种状态
 
-![history `模式或` hash` 模式](../.vuepress/public/promise-2.jpg)
+![三种状态](../.vuepress/public/promise-2.jpg)
 
 ###  Axios
 
@@ -553,7 +553,7 @@ const allReq = ()=>{
 
 #### 常用配置选项
 
-![history `模式或` hash` 模式](../.vuepress/public/axios-1.jpg)
+![常用配置](../.vuepress/public/axios-1.jpg)
 
 #### 全局配置
 
@@ -587,4 +587,90 @@ export default{
 ```
 
 详细内容访问[Axios中文文档](http://www.axios-js.com/zh-cn/docs/)
+
+### Vuex
+
+`Vuex `是一个专为` Vue.js `应用程序开发的**状态管理模式 + 库**。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。
+
+详细内容访问[Vuex中文文档](https://next.vuex.vuejs.org/zh/index.html)
+
+#### 安装
+
+```shell
+npm install vuex@next --save
+```
+
+#### Vuex 组成
+
+![vue组成](../.vuepress/public/vuex.jpg)
+
+![vue组成](../.vuepress/public/vuex-1.jpg)
+
+![vue组成](../.vuepress/public/vuex-2.jpg)
+
+####  State
+
+详细内容访问[state](https://next.vuex.vuejs.org/zh/guide/state.html)
+
+#### Getter
+
+详细内容访问[Getter](https://next.vuex.vuejs.org/zh/guide/getters.html)
+
+#### Mutation
+
+详细内容访问[Mutation](https://next.vuex.vuejs.org/zh/guide/mutations.html)
+
+#### Action
+
+详细内容访问[Action](https://next.vuex.vuejs.org/zh/guide/actions.html)
+
+####  Module
+
+详细内容访问[Module](https://next.vuex.vuejs.org/zh/guide/modules.html)
+
+#### 简单案例:计数器
+
+```javascript
+// 引入vuex
+import {createStore} from 'vuex'
+
+// 创建store对象
+const store = createStore(options, {
+    // 全局共享状态（数据）存放
+    state: {
+            counter: 0,
+    },
+    getters: {},
+    // 同步提交状态
+    mutations: {
+        // 加一
+        INCREMENT(state){
+            state.counter++;
+        },
+        // 减一
+        DECREMENT(state){
+            state.counter--;
+        },
+    },
+    // 提交操作（可以是同步也可以是异步）给mutations
+    actions: {
+         // 加一
+        increment({commit}){
+           commit('INCREMENT')
+        },
+        // 减一
+        decrement({commit}){
+            commit('DECREMENT')
+        },
+    }
+})
+
+
+// 导出
+export default store
+```
+
+为同步操作时可精简
+
+####  
 
