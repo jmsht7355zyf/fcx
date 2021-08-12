@@ -54,18 +54,6 @@ sidebar: auto
 - 响应空行
 - 响应体
 
-### 浏览器检查
-
-<br>
-
-![post](../.vuepress/public/post1.png)
-
-<br>
-
-![post](../.vuepress/public/post2.png)
-
-<br>
-
 ## Express框架
 
 ### 安装
