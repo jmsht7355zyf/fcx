@@ -7,15 +7,32 @@ sidebar: auto
 
 ## 基础相关技术
 
-非前后端相关技术，而是代码类、工程类必备知识、工具内容：
+### 工程类、工具类
 
-[![vim](../.vuepress/public/vimpz.png)](vim简单配置.md) 	[![git](../.vuepress/public/gitbase.png)](git基础及命令.md)				
-[![markdown](../.vuepress/public/markdown.png)](markdown基本语法.md)
+涉及基础操作配置及简单工具使用（包含编程软件的使用）
+
+[![vim](../.vuepress/public/vimpz.png)](vim简单配置.md) 	[![git](../.vuepress/public/gitbase.png)](git基础及命令.md)		[![markdown](../.vuepress/public/markdown.png)](markdown基本语法.md)
 
 ## 前端相关技术
 
-前端基础相关技术及延申：
+### 基础三件套
 
-[![ajax](../.vuepress/public/ajax.png)](ajax入门.md)	[![axios](../.vuepress/public/axios.png)](axios入门.md)	[![vue](../.vuepress/public/vue.png)](vue基础入门.md)		
-[![vue工程](../.vuepress/public/vue-project.png)](vue工程化基础配置.md)	[![vite](../.vuepress/public/vite.png)](vite基础入门.md)	[![vuepress](../.vuepress/public/vuepress.png)](vuepress基础配置.md)
+传统`Html`、`Css`、`JavaScript`,及其内容延申。
 
+[![ajax](../.vuepress/public/ajax.png)](ajax入门.md)		
+
+### 基础拓展
+
+除三件套以外涉及延申内容如（`Typescript`、`Node`等）
+
+### 前端框架
+
+前端流行框架（`Vue`、`React`）及工程化、框架相关内容。
+
+[![axios](../.vuepress/public/axios.png)](axios入门.md)	[![vue](../.vuepress/public/vue.png)](vue基础入门.md)	[![vue工程](../.vuepress/public/vue-project.png)](vue工程化基础配置.md)	[![vite](../.vuepress/public/vite.png)](vite基础入门.md)	
+
+### 前端文档工具
+
+前端文档部署工具
+
+[![vuepress](../.vuepress/public/vuepress.png)](vuepress基础配置.md)
