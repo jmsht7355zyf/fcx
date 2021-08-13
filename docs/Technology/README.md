@@ -9,7 +9,7 @@ sidebar: auto
 
 ### 工程类、工具类
 
-涉及基础操作配置及简单工具使用（包含编程软件的使用）
+涉及基础操作配置及简单工具使用（包含编程软件的使用）。
 
 [![vim](../.vuepress/public/vimpz.png)](vim简单配置.md) 	[![git](../.vuepress/public/gitbase.png)](git基础及命令.md)		[![markdown](../.vuepress/public/markdown.png)](markdown基本语法.md)
 
@@ -23,7 +23,7 @@ sidebar: auto
 
 ### 基础拓展
 
-除三件套以外涉及延申内容如（`Typescript`、`Node`等）
+除三件套以外涉及延申内容如（`Typescript`、`Node`等）。
 
 ### 前端框架
 
@@ -33,6 +33,6 @@ sidebar: auto
 
 ### 前端文档工具
 
-前端文档部署工具
+前端文档部署工具。
 
 [![vuepress](../.vuepress/public/vuepress.png)](vuepress基础配置.md)
