@@ -5,6 +5,12 @@ sidebar: auto
 
 # <center>vue工程化基础配置</center>
 
+## 项目准备
+
+安装内容
+
+`vue3`、`vite`、`router`、`vuex`、`scss`插件、`axios`。
+
 ## 项目结构
 
 ```项目结构
@@ -46,6 +52,10 @@ import App from './App.vue'
 
 //引入全局路由对象
 import Router from "./router/index.js";
+// // 引入axios
+import axios from 'axios'
+//引入vuex
+import Store from './store/index.js'
 
 // 引入全局公共样式
 import './assets/scss/common.scss'
@@ -54,8 +64,10 @@ import './assets/scss/common.scss'
 const app = createApp(App)
 
 // 使用
-app.use(Router)
+app.use(Router).use(Store)
 app.mount('#app')
+//vue 3中，axios不是一个插件（我们不能像app.use()）那样注册它，而是一个可以添加到应用程序
+app.config.globalProperties.axios=axios
 ```
 
 ### package.json
