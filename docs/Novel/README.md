@@ -11,10 +11,22 @@ sidebar: auto
 </font>
 </center>
 
-[![note](../.vuepress/public/fs.jpg)](范氏列传.md) 
-<br>
+[![fs](../.vuepress/public/fs.jpg)](范氏列传.md) 	
+
+# <center>神若银灵</center>
+
+***
+
+<center>
+<font color ="#268EBA">
+<h3>神是存于世间，还是显于孤岛，心中的信念，是否因外物而改变</h3>
+</font>
+</center>
+
+[![yl](../.vuepress/public/yl.jpg)](神若银灵.md) 	
 
 # <center>散文集·凡尘若水</center>
+
 ***
 <center>
 <font color ="#268EBA">
@@ -22,6 +34,5 @@ sidebar: auto
 </font>
 </center>
 
-[![note](../.vuepress/public/fcrs.jpg)](凡尘若水.md) 
-<br>
+[![fcrs](../.vuepress/public/fcrs.jpg)](凡尘若水.md) 	
 

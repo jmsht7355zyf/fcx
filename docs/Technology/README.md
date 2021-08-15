@@ -19,7 +19,7 @@ sidebar: auto
 
 传统`Html`、`Css`、`JavaScript`,及其内容延申。
 
-[![ajax](../.vuepress/public/ajax.png)](ajax入门.md)		
+[![flex](../.vuepress/public/flex.png)](flex基础入门.md)		[![ajax](../.vuepress/public/ajax.png)](ajax入门.md)		
 
 ### 基础拓展
 
@@ -36,3 +36,4 @@ sidebar: auto
 前端文档部署工具。
 
 [![vuepress](../.vuepress/public/vuepress.png)](vuepress基础配置.md)
+

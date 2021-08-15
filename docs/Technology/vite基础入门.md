@@ -3,7 +3,7 @@ title: vite基础入门
 sidebar: auto
 ---
 
-# <center> Vue 基础入门</center>
+# <center> Vite 基础入门</center>
 
 Vite (法语意为 "快速的"，发音 `/vit/`) 是一种新型前端构建工具，能够显著提升前端开发体验。它主要由两部分组成：
 
