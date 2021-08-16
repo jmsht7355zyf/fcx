@@ -117,7 +117,7 @@ flex-grow:1;
 
 子盒子sum值的大小大于1，超出的size*收缩比例/所有子盒子的收缩比例之和；
 
-子盒子sum值的大小小于等于1，每个子盒子收缩的size为子盒子父盒子的size\*sum\*收缩比例/所有子盒子的收缩比例之和。收缩比例 = flex-shrink\*子盒子的`base sise`。
+子盒子sum值的大小小于等于1，每个子盒子收缩的size为子盒子父盒子的size\*sum\*收缩比例/所有子盒子的收缩比例之和。收缩比例 = `flex-shrink`\*子盒子的`base sise`。
 
 ```css
 flex-shrink:1;
