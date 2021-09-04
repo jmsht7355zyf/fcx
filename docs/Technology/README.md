@@ -23,7 +23,9 @@ sidebar: auto
 
 ### 基础拓展
 
-除三件套以外涉及延申内容如（`Typescript`、`Node`等）。
+除三件套以外涉及延申内容如（`Sass`、`Typescript`、`Node`等）。
+
+[![sass](../.vuepress/public/sass.png)](sass基础入门.md)
 
 ### 前端框架
 
