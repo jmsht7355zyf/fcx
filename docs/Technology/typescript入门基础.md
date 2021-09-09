@@ -1,7 +1,6 @@
 ---
 title: typescript入门基础
 sidebar: auto
-
 ---
 
 # <center>typescript入门基础</center>
