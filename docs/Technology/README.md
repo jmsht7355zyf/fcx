@@ -19,7 +19,7 @@ sidebar: auto
 
 传统`Html`、`Css`、`JavaScript`,及其内容延申。
 
-[![flex](../.vuepress/public/flex.png)](flex基础入门.md)		[![ajax](../.vuepress/public/ajax.png)](ajax入门.md)		[![JavaScript](../.vuepress/public/JavaScript.png)](JavaScript基础入门.md)				
+[![flex](../.vuepress/public/flex.png)](flex基础入门.md)		[![ajax](../.vuepress/public/ajax.png)](ajax入门.md)		[![JavaScript](../.vuepress/public/JavaScript.png)](JavaScript基础入门.md)		[![JavaScript](../.vuepress/public/JavaScriptgj.png)](JavaScript高级.md)
 
 ### 基础拓展
 
@@ -33,9 +33,9 @@ sidebar: auto
 
 [![axios](../.vuepress/public/axios.png)](axios入门.md)	[![vue](../.vuepress/public/vue.png)](vue基础入门.md)	[![vue工程](../.vuepress/public/vue-project.png)](vue工程化基础配置.md)	[![vite](../.vuepress/public/vite.png)](vite基础入门.md)	
 
-### 前端文档工具
+### 文档工具
 
-前端文档部署工具。
+文档部署工具及帮助文档及工具。
 
-[![vuepress](../.vuepress/public/vuepress.png)](vuepress基础配置.md)
+[![vuepress](../.vuepress/public/vuepress.png)](vuepress基础配置.md)		[![英文词汇](../.vuepress/public/ywch.png)](常用英文词汇.md)
 
