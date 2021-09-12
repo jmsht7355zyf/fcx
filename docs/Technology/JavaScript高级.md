@@ -7,7 +7,7 @@ sidebar: auto
 
 ## 面向对象
 
-**面向对象特性：**封装性、继承性、多态性。
+面向对象特性：封装性、继承性、多态性。
 
 ## 类与对象
 
@@ -270,8 +270,6 @@ console.log(people);
 ### 概念
 
 ![正则](../.vuepress/public/zzdy.jpg)
-
-### 
 
 ### RegExp 对象
 

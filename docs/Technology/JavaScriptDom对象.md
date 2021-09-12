@@ -11,7 +11,7 @@ sidebar: auto
 
 Document 对象使我们可以从脚本中对 HTML 页面中的所有元素进行访问。
 
-**提示：**Document 对象是 Window 对象的一部分，可通过 window.document 属性对其进行访问。
+提示：Document 对象是 Window 对象的一部分，可通过 window.document 属性对其进行访问。
 
 ### Document 对象集合
 
