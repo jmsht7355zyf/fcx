@@ -589,3 +589,184 @@ function date(...args){
 date('xh','jh','jk');
 ```
 
+### 扩展运算符
+
+`[...]`扩展运算符能将数组转化为逗号分割的参数序列
+
+```javascript
+const names = ['xj','hd','lh'];
+function name(){
+     console.log(agruments);
+}
+name(...names);
+```
+
+输出结果：
+
+```
+'xj','hd','lh'
+```
+
+#### 应用
+
+```javascript
+//数组合并
+const kuaizi = ['王太利','肖央'];
+const fenghuang = ['曾毅','玲花'];
+const kzfh = [...kuaizi,...fenghuang];
+console.log(kzfh);
+```
+
+```javascript
+//数组克隆
+const kuaizi = ['王太利','肖央'];
+const xpg = [...kuaizi];
+console.log(xpg);
+```
+
+```javascript
+//将伪数组转为真数组
+const divs = dociment.querySeleectorAll('div');
+const divArr = [...divs];
+console.log(divArr);
+```
+
+### symbol（原始数据类型）
+
+它表示独一无二的值。是一种类似于字符串的数据类型。
+
+1. 它的值是唯一的，用来解决命名冲突问题。
+2. 它的值不能与其他数据进行运算。
+3. 它定义的对象属性不能使用`for..in..`循环遍历，但可使用`Reflect.ownKeys`来获取对象的所有键名。
+
+```javascript
+//创建原始数据类型
+let s1 = Symbol();
+let s2 = Symbol('原始数据类型');
+let s3 = Symbol.for('原始数据类型'，'循环遍历'); //symbol创建对象
+```
+
+#### 使用场景
+
+```javascript
+let game = {
+    
+}
+let methods = {
+    up:Symbol(),
+    down:Symbol()
+}
+game.[methods.up] = function(){
+    console.log('我可以向上');
+}    
+game.[methods.down] = function(){
+    console.log('我可以向下');
+}    
+console.log(game);
+```
+
+#### 重要属性
+
+1: `Symbol.hasInstance` 一个在执行` instanceof `时调用的方法，用于检测对象的继承信息
+2: `Symbol.isConcatSpreadable` 一个布尔值，用于表示当传递一个集合作为`Array.prototype.concat()`的参数是，是否应该将集合内的元素拍平到同一层级
+3: `Symbol.iterator `在迭代器和生成器那篇文章已经细讲过
+4:` Symbol.match `一个在调用`String.prototype.match()`时调用的方法，用于比较字符串
+5: `Symbol.replace `一个在调用`String.prototype.replace()`时调用的方法，用于替换字符串的子串
+6: `Symbol.search `一个在调用`String.prototype.search()`时调用的方法，用于定位子串在字符串中的位置
+7: `Symbol.split `一个在调用`String.prototype.split()`时调用的方法，用于分割字符串
+8: `Symbol.species `用于创建派生对象的构造函数
+9: `Symbol.toPrimitive `一个返回对象原始值的方法
+10:` Symbol.toStringTag` 一个在调用`Object.prototype.toString()`时使用的字符换，用于创建对象的描述
+11: `Symbol.unscopables `一个定义了一些不可被with语句引用的对象属性名称的对象集合
+
+### 迭代器
+
+迭代器是一种接口，为各种不同的数据结构提供统一的访问机制。任何数据结构只要部署`Iterator`接口，就可以完成遍历操作。
+
+1. `ES6`创造了遍历`for..of`循环，`Iterator`接口主要供`for..of`消费
+2. 原生具备`Iterator`接口的数据。
+   - Arrary
+   - Arguments
+   - Set
+   - Map
+   - String
+   - TypeArray
+   - NodeList
+3. 工作原理
+   1. 创建一个指针对象，指向当前数据结构的起始位置。
+   2. 第一次调用对象的`next`方法，指针自动指向数据结构的第一个成员。
+   3. 接下来不断调用`next`方法，指针一直往后移动，直到指向最后一个成员。
+
+```javascript
+const names = ['xh','kj','lq','hd','df'];
+//使用for..of..遍历
+for (let v of names){
+    console.log(v);
+}
+```
+
+### 生成器（函数）
+
+生成器其实就是一个特殊的函数。
+
+```javascript
+function * gen(){
+   	yield '这是1'
+   // console.log('这是1');
+    yield '这是2'
+  //  console.log('这是2');
+    yield '这是3'
+   // console.log('这是3');
+}
+
+for (let v of gen()){
+    console.log(v);
+}
+```
+
+#### 参数传递
+
+```javascript
+function * gen(aaa){
+   	yield '这是1'
+    yield '这是2'
+    yield '这是3'
+}
+let iterator = gen(aaa);
+console.log(iterator.next('123'));
+console.log(iterator.next('456'));
+console.log(iterator.next('789'));
+```
+
+#### 实例
+
+```javascript
+//3秒，每秒分别输出111，222，333
+function one(){
+    setTimeout(()=>{
+        console.log('111'));
+    },1000)
+    iterator.next();
+}
+function two(){
+     setTimeout(()=>{
+        console.log('222'));
+    },1000)
+    iterator.next();
+}
+function three(){
+    setTimeout(()=>{
+        console.log('333'));
+    },1000)
+    iterator.next();
+}
+function * gen(aaa){
+   	yield one();
+    yield two();
+    yield three();
+}
+//调用生成器函数
+let iterator = gen();
+iterator.next();
+```
+
