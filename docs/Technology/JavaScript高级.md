@@ -263,7 +263,7 @@ console.log(people);
 
 ### HTML Element 
 
-[详细内容访问JavaScriptHTMLElement ](JavaScriptHTMLElement .md)
+[详细内容访问JavaScriptHTMLElement](JavaScriptHTMLElement.md)
 
 ## 正则表达式
 
