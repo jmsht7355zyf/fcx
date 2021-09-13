@@ -770,3 +770,89 @@ let iterator = gen();
 iterator.next();
 ```
 
+### Promise
+
+`ES6`引入的异步编程解决方案，语法上`Promise`是一个构造函数。用来封装异步操作，并获取其成功或是失败的结果。
+
+1. Promise构造函数：`Promise(excutor){}`
+2. `Promise.prototype.then`方法
+3. `Promise.prototype.catch`方法
+
+```javascript
+const p = new Promise(function (resolve, reject) {
+    setTimeout(() => {
+        let data = '数据库中的用户数据';
+        // resolve
+        resolve(data);
+      //  let err = '数据调取失败';
+      // reject(err)
+    }, 1000)
+
+    p.then(function (value) {
+            console.log(value);
+        }),
+        function (reason) {
+            console.error(reason);
+        }
+})
+```
+
+```javascript
+//使用ajax获取接口
+// 接口地址：https//api.apiopen.top/getJoke
+// 创建对象
+const xhr = new XMLHttpRequest();
+// 初始化
+xhr.open('GET','https//api.apiopen.top/getJoke');
+// 发送
+xhr.send();
+// 绑定事件，处理响应结果
+xhr.onreadystatechange = function(){
+    //判断
+    if(xhr .readyState === 4){
+        //判断响应状态码 200-299 
+        if (xhr.status >= 200 && xhr.status  < 300) {
+            //成功
+            console.log(xhr.response);
+        }else{
+            //失败
+            console.error(xhr.status);
+        }
+    }
+}
+```
+
+```javascript
+//使用Promise方法获取接口
+// 接口地址：https//api.apiopen.top/getJoke
+const p = new Promise((resolve, reject) => {
+    // 创建对象
+    const xhr = new XMLHttpRequest();
+    // 初始化
+    xhr.open('GET', 'https//api.apiopen.top/getJoke');
+    // 发送
+    xhr.send();
+    // 绑定事件，处理响应结果
+    xhr.onreadystatechange = function () {
+        //判断
+        if (xhr.readyState === 4) {
+            //判断响应状态码 200-299 
+            if (xhr.status >= 200 && xhr.status < 300) {
+                //成功
+                console.log(xhr.response);
+            } else {
+                //失败
+                console.error(xhr.status);
+            }
+        }
+    }
+
+    p.then(function (value) {
+        console.log(value);
+    }, function (reason) {
+        console.log(reason);
+    })
+
+});
+```
+

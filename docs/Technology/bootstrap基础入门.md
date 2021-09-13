@@ -5,7 +5,7 @@ sidebar: auto
 
 # <center>bootstrap5基础入门</center>
 
-## <center>[详细内容请访问中文文档](https://www.bootstrap.cn/doc/read/94)</center>
+### <center>[详细内容请访问中文文档](https://www.bootstrap.cn/doc/read/94)</center>
 
 ## 浏览器和设备支持
 
