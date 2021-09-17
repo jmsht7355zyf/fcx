@@ -856,3 +856,170 @@ const p = new Promise((resolve, reject) => {
 });
 ```
 
+### set
+
+set(集合)。类似于数组，但成员都是唯一的，集合实现了`Iterator`接口，所以可使用拓展运算符和`for..of..`进行遍历。
+
+```javascript
+// 声明一个set
+let s = new Set(['a','b']);
+console.log(s);
+```
+
+#### .size 	集合内元素的个数
+
+#### .add()	集合内添加元素
+
+#### .delete()	集合删除元素
+
+#### .has() 检查元素
+
+#### .clear() 清空集合内的元素
+
+### Map
+
+它类似于对象，也是键值对的集合，但是键的范围不限于字符串，各种数据类型，（包括对象），都可以作为键。map也实现了`Iterator`接口所以可使用拓展运算符和`for..of..`进行遍历。
+
+#### .size 	返回map元素的个数
+
+#### .set	增加一个新元素，返回当前map
+
+#### .get	返回键名对象的键值
+
+#### .has() 检查map中是否包含某个元素，返回boolean（布尔）值
+
+#### .clear() 清空集map的元素
+
+### class
+
+`ES6`更接近传统的写法，引入了class（类）这个概念，作为对象的模板。通过class关键字，可以定义类，基本上`ES6`的class可以看作是一个语法糖，它的大部分功能，`ES5`都可以做到。
+
+```javascript
+//ES5实现
+function Phone(brand,price){
+    this.brand = brand;
+    this.price = price;
+}
+// 添加方法
+Phone.prototype.call = function(){
+    console.log('我可以打电话');
+}
+// 实例化对象
+let huawei = new Phone('HUAWEI','5999');
+huawei.call;
+console.log(huawei);
+```
+
+```javascript
+//ES6实现
+class Phone {
+    // 构造方法
+    constructor(brand, price) {
+        this.brand = brand;
+        this.price = price;
+    }
+    call(){
+        console.log('我可以打电话');
+    }
+}
+let huawei = new Phone('HUAWEI','5999');
+huawei.call;
+console.log(huawei);
+```
+
+#### class 静态方法
+
+```javascript
+//ES5实现
+function Phone (){
+
+}
+Phone.name = '手机';
+Phone.change = function () {
+    console.log('我可以改变世界');
+}
+Phone.prototype.size = '5.5c'
+let huawei = new Phone();
+console.log('huawei.name');
+huawei.change();
+console.log('huawei.size');
+```
+
+```javascript
+//ES6实现
+class Phone{
+    static name = '手机';
+    static change(){
+        console.log('我可以改变世界');
+    }
+}
+let huawei = new Phone();
+console.log(huawei.name );
+console.log(Phone.name );
+```
+
+#### 类的继承
+
+```javascript
+class Phone {
+    constructor(brand, price) {
+        this.brand = brand;
+        this.price = price;
+    }
+    call() {
+        console.log('我可以改变世界');
+    }
+}
+
+class smartPhone extends Phone {
+    constructor(brand, price) {
+        super(brand, price);
+        this.color = color;
+        this.size = size;
+    }
+    photo(){
+        console.log('我可以拍照');
+    }
+    playGame(){
+        console.log('我可以玩游戏');
+    }
+}
+
+const huawei = new smartPhone('小米','1999','黑色','5.5c');
+```
+
+#### get与set
+
+```javascript
+class Phone{
+    get price(){
+        console.log('价格属性');
+    }
+    set price(){
+        console.log('价格属性');
+    }
+}
+//实例化对象
+let huawei = new Phone(newvalue);
+console.log(huawei.price);
+```
+
+### ES6模块化
+
+- 防止命名冲突
+- 代码复用
+- 高维护性
+
+#### 模块化规范
+
+CommonJS  => Node.js Browserify
+
+AMD => requireJS
+
+CMD => seaJS
+
+#### ES6模块化语法
+
+- export 模块导出
+- import 模块导入
+
