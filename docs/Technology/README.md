@@ -25,7 +25,7 @@ sidebar: auto
 
 除三件套以外涉及延申内容如（`Sass`、`Typescript`、`Node`等）。
 
-[![sass](../.vuepress/public/sass.png)](sass基础入门.md)
+[![sass](../.vuepress/public/sass.png)](sass基础入门.md)		[![typescript](../.vuepress/public/typescript.png)](typescript基础入门.md)
 
 ### 前端框架
 
