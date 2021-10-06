@@ -13,7 +13,7 @@ sidebar: auto
 <font color =#6AB389> 
 <h4>个人小说著作，仅供个人娱乐</h4>
 </font>
-<a href="https://jmsht7355zyf.github.io/blog/Novel/">
+<a href="https://jmsht7355zyf.github.io/blog/Note/">
 <img :src="$withBase('wx.jpg')" alt="wx">
 </a>
 
