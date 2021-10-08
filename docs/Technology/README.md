@@ -32,7 +32,6 @@ sidebar: auto
 前端流行框架（`Vue`、`React`）及工程化、框架相关内容。
 
 [![axios](../.vuepress/public/axios.png)](axios入门.md)	[![vue](../.vuepress/public/vue.png)](vue基础入门.md)	[![vue工程](../.vuepress/public/vue-project.png)](vue工程化基础配置.md)	[![vite](../.vuepress/public/vite.png)](vite基础入门.md)	
-
 [![bts](../.vuepress/public/bootstrap.png)](bootstrap基础入门.md)	[![react](../.vuepress/public/react.png)](react基础入门.md)
 
 ### 文档工具
