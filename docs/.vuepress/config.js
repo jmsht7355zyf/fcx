@@ -27,7 +27,8 @@ module.exports = {
                 text: 'about',
                 items: [
                   { text: 'github', link: 'https://github.com/jmsht7355zyf' },
-                  { text: 'gitee', link: 'https://gitee.com/jmsht7355' }
+                  { text: 'gitee', link: 'https://gitee.com/jmsht7355' },
+                  { text: 'Contact', link: 'https://jmsht7355zyf.github.io/msfc/#/about' }
                 ]
               }
           ],
