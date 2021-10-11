@@ -8,10 +8,10 @@ footer: MIT Licensed | Copyright © 2018-present 郑依凡
 sidebar: auto
 ---
 <center>
-<h1>小说世界  心向往之</h1>
+<h1>幻想世界  心向往之</h1>
     <hr />
 <font color =#6AB389> 
-<h4>个人小说著作，仅供个人娱乐</h4>
+<h4>个人日记随便，仅供个人娱乐</h4>
 </font>
 <a href="https://jmsht7355zyf.github.io/blog/Note/">
 <img :src="$withBase('wx.jpg')" alt="wx">
