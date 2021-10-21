@@ -14,7 +14,7 @@ sidebar: auto
 <h4>个人日记随便，仅供个人娱乐</h4>
 </font>
 <a href="https://jmsht7355zyf.github.io/blog/Note/">
-<img :src="$withBase('jpg.svg')" alt="wx">
+<img :src="$withBase('jpg.jpg')" alt="wx">
 </a>
 
 <br>
