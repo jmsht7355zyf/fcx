@@ -4,6 +4,7 @@ module.exports = {
     base: '/blog/' ,
     // head头
     head: [
+      ['link',{rel:'icon',herf:'favicon.ico'}],
       ['mata ', {'http-equiv':"Pragma",content:"no-cache"}],
       ['mata ', {'http-equiv':"Cache-Control",content:"no-cache,must-revalidate"}],
       ['mata  ', {'http-equiv':"Expires",content:"0"}],
@@ -12,7 +13,7 @@ module.exports = {
         "vuepress-plugin-auto-sidebar": {}
       },
     themeConfig: {
-        // logo: '/public/logo.png',
+        logo: 'logo.png',
         smoothScroll: true,
         displayAllHeaders: true ,
         sidebar: 'auto',
@@ -20,15 +21,20 @@ module.exports = {
             sidebar: 'auto'
           },
         nav: [
-            { text: 'Home', link: '/' },
-            { text: 'Note', link: '/Note/' },
-            { text: 'Technology', link: '/Technology/' },
+            { text: '首页', link: '/' },
+            { text: '个人日记', link: '/Note/' },
+            { text: '中文文档', link: '/Doc/' },
+            { text: '项目工程', link: '/Project/' },
+            { text: '技术胶囊', link: '/Technology/' },
             {
-                text: 'about',
+                text: '联系我',
                 items: [
-                  { text: 'github', link: 'https://github.com/jmsht7355zyf' },
-                  { text: 'gitee', link: 'https://gitee.com/jmsht7355' },
-                  { text: 'Contact', link: 'https://jmsht7355zyf.github.io/msfc/#/about' }
+                  { text: 'Github', link: 'https://github.com/jmsht7355zyf' },
+                  { text: '码云', link: 'https://gitee.com/jmsht7355' },
+                  { text: '掘金', link: 'https://juejin.cn/user/4424090522232510' },
+                  { text: '知乎', link: 'https://www.zhihu.com/people/zheng-yi-fan-22' },
+                  { text: '微博', link: 'https://weibo.com/jmsht7355/' },
+                  { text: 'B站', link: 'https://space.bilibili.com/14080514' },
                 ]
               }
           ],

@@ -7,36 +7,81 @@ sidebar: auto
 
 ## 基础相关技术
 
-### 工程类、工具类
+`涉及基础操作配置及简单工具使用如vim、git、markdown等包含文档书写、版本控制、文本编辑（包含编程软件的使用）。`
 
-涉及基础操作配置及简单工具使用（包含编程软件的使用）。
+### [vim简单配置](vim简单配置.md)
 
-[![vim](../.vuepress/public/vimpz.png)](vim简单配置.md) 	[![git](../.vuepress/public/gitbase.png)](git基础及命令.md)	[![markdown](../.vuepress/public/markdown.png)](markdown基本语法.md)
+`vim`文本编辑器的简单配置，常用于`Linux`服务器中修改配置文件等操作，是后端必备的技能配置。
 
-## 前端相关技术
+### [git基础及命令](git基础及命令.md)
 
-### 基础三件套
+`git`是程序员必须掌握的版本控制软件。
 
-传统`Html`、`Css`、`JavaScript`,及其内容延申。
+### [markdown基本语法](markdown基本语法.md)
 
-[![html+css](../.vuepress/public/html+css.png)](html+css入门.md)	[![flex](../.vuepress/public/flex.png)](flex基础入门.md)	[![ajax](../.vuepress/public/ajax.png)](ajax入门.md)	[![JavaScript](../.vuepress/public/JavaScript.png)](JavaScript基础入门.md)	[![JavaScript](../.vuepress/public/JavaScriptgj.png)](JavaScript高级.md)
+`markdown`语法是相对来说适合编写文档的必要语法。
 
-### 基础拓展
+## 前端基础技术
 
-除三件套以外涉及延申内容如（`Sass`、`Typescript`、`Node`等）。
+`传统Html、Css、JavaScript,及其内容延申,(如html中特殊标签的使用、css中版本，语法涉及布局、样式、定位、盒模型等重要概念，以及JavaScript中相关重要内容)。`
 
-[![sass](../.vuepress/public/sass.png)](sass基础入门.md)	[![typescript](../.vuepress/public/typescript.png)](typescript基础入门.md)
+### [html+css入门](html+css入门.md)
 
-### 前端框架
+前端基础三件套之二，必须熟练掌握。
 
-前端流行框架（`Vue`、`React`）及工程化、框架相关内容。
+### [flex基础入门](flex基础入门.md)
 
-[![axios](../.vuepress/public/axios.png)](axios入门.md)	[![vue](../.vuepress/public/vue.png)](vue基础入门.md)	[![vue工程](../.vuepress/public/vue-project.png)](vue工程化基础配置.md)	[![vite](../.vuepress/public/vite.png)](vite基础入门.md)	
-[![bts](../.vuepress/public/bootstrap.png)](bootstrap基础入门.md)	[![react](../.vuepress/public/react.png)](react基础入门.md)
+`css`布局中的经典布局，常用于手机端布局。
 
-### 文档工具
+### [ajax入门](ajax入门.md)
 
-文档部署工具及帮助文档及工具。
+前端前十年的革新技术。加快了浏览器与用户交互的历程。
 
-[![vuepress](../.vuepress/public/vuepress.png)](vuepress基础配置.md)	[![英文词汇](../.vuepress/public/ywch.png)](常用英文词汇.md)
+### [JavaScript基础入门](JavaScript基础入门.md)
+
+前端基础三件套之一，基础内容主要包含数据类型、逻辑结构、基础语法等。
+
+### [JavaScript高级](JavaScript高级.md)
+
+前端基础三件套之一，高级内容主要包含闭包、面向对象、函数、`ES6`等。
+
+## 前端基础拓展
+
+`除三件套以外涉及延申内容如（Sass、Typescript、Node等）。`
+
+### [sass基础入门](sass基础入门.md)
+
+`css`的一种预处理器，优化`css`语法书写。
+
+### [Typescript基础入门](typescript基础入门.md)
+
+`JavaScript`的超集，前端现阶段必须要掌握的语言之一。
+
+## 前端相关框架
+
+`前端流行框架（Vue、React）及工程化、框架相关内容，延申前端UI框架、模块化编程、响应式编程、浏览器适配、等工程化问题。`
+
+### [axios入门](axios入门.md)
+
+`ajax`常用`JavaScript`框架。
+
+### [vue基础入门](vue基础入门.md)
+
+`Vue` (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**渐进式框架**。前端三大视图框架之一。
+
+### [vue工程化基础配置](vue工程化基础配置.md)
+
+前端三大视图框架之一。基本相关配置及组织架构。
+
+### [vite基础入门](vite基础入门.md)
+
+`Vite`（法语意为 "快速的"，发音 `/vit/`，发音同 "veet")是一种新型前端构建工具，能够显著提升前端开发体验。
+
+### [react基础入门](react基础入门.md)
+
+`React` 是一个用于构建用户界面的 JavaScript 库。前端三大视图框架之一。
+
+### [bootstrap基础入门](bootstrap基础入门.md)
+
+`Bootstrap` 是全球最流行的前端开源工具包，它支持` Sass `变量和 `mixins`、响应式网格系统、大量的预建组件和强大的 `JavaScript `插件，助你快速设计和自定义响应式、移动设备优先的站点。
 
