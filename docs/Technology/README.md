@@ -9,17 +9,17 @@ sidebar: auto
 
 `涉及基础操作配置及简单工具使用如vim、git、markdown等包含文档书写、版本控制、文本编辑（包含编程软件的使用）。`
 
-### [vim简单配置](vim简单配置.md)
+###  [vim简单配置](vim简单配置.md)
 
-`vim`文本编辑器的简单配置，常用于`Linux`服务器中修改配置文件等操作，是后端必备的技能配置。
+![code](../.vuepress/public/code.png) `vim`文本编辑器的简单配置，常用于`Linux`服务器中修改配置文件等操作，是后端必备的技能配置。
 
 ### [git基础及命令](git基础及命令.md)
 
-`git`是程序员必须掌握的版本控制软件。
+![code](../.vuepress/public/code.png) `git`是程序员必须掌握的版本控制软件。
 
 ### [markdown基本语法](markdown基本语法.md)
 
-`markdown`语法是相对来说适合编写文档的必要语法。
+![code](../.vuepress/public/code.png) `markdown`语法是相对来说适合编写文档的必要语法。
 
 ## 前端基础技术
 
@@ -27,23 +27,23 @@ sidebar: auto
 
 ### [html+css入门](html+css入门.md)
 
-前端基础三件套之二，必须熟练掌握。
+![code](../.vuepress/public/code.png) 前端基础三件套之二，必须熟练掌握。
 
 ### [flex基础入门](flex基础入门.md)
 
-`css`布局中的经典布局，常用于手机端布局。
+![code](../.vuepress/public/code.png) `css`布局中的经典布局，常用于手机端布局。
 
 ### [ajax入门](ajax入门.md)
 
-前端前十年的革新技术。加快了浏览器与用户交互的历程。
+![code](../.vuepress/public/code.png) 前端前十年的革新技术。加快了浏览器与用户交互的历程。
 
 ### [JavaScript基础入门](JavaScript基础入门.md)
 
-前端基础三件套之一，基础内容主要包含数据类型、逻辑结构、基础语法等。
+![code](../.vuepress/public/code.png) 前端基础三件套之一，基础内容主要包含数据类型、逻辑结构、基础语法等。
 
 ### [JavaScript高级](JavaScript高级.md)
 
-前端基础三件套之一，高级内容主要包含闭包、面向对象、函数、`ES6`等。
+![code](../.vuepress/public/code.png) 前端基础三件套之一，高级内容主要包含闭包、面向对象、函数、`ES6`等。
 
 ## 前端基础拓展
 
@@ -51,37 +51,37 @@ sidebar: auto
 
 ### [sass基础入门](sass基础入门.md)
 
-`css`的一种预处理器，优化`css`语法书写。
+![code](../.vuepress/public/code.png) `css`的一种预处理器，优化`css`语法书写。
 
 ### [Typescript基础入门](typescript基础入门.md)
 
-`JavaScript`的超集，前端现阶段必须要掌握的语言之一。
+![code](../.vuepress/public/code.png) `JavaScript`的超集，前端现阶段必须要掌握的语言之一。
 
 ## 前端相关框架
 
 `前端流行框架（Vue、React）及工程化、框架相关内容，延申前端UI框架、模块化编程、响应式编程、浏览器适配、等工程化问题。`
 
-### [axios入门](axios入门.md)
+###  [axios入门](axios入门.md)
 
-`ajax`常用`JavaScript`框架。
+![code](../.vuepress/public/code.png) `ajax`常用`JavaScript`框架。
 
-### [vue基础入门](vue基础入门.md)
+###  [vue基础入门](vue基础入门.md)
 
-`Vue` (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**渐进式框架**。前端三大视图框架之一。
+![code](../.vuepress/public/code.png) `Vue` (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**渐进式框架**。前端三大视图框架之一。
 
-### [vue工程化基础配置](vue工程化基础配置.md)
+###  [vue工程化基础配置](vue工程化基础配置.md)
 
-前端三大视图框架之一。基本相关配置及组织架构。
+![code](../.vuepress/public/code.png) 前端三大视图框架之一。基本相关配置及组织架构。
 
-### [vite基础入门](vite基础入门.md)
+###  [vite基础入门](vite基础入门.md)
 
-`Vite`（法语意为 "快速的"，发音 `/vit/`，发音同 "veet")是一种新型前端构建工具，能够显著提升前端开发体验。
+![code](../.vuepress/public/code.png) `Vite`（法语意为 "快速的"，发音 `/vit/`，发音同 "veet")是一种新型前端构建工具，能够显著提升前端开发体验。
 
-### [react基础入门](react基础入门.md)
+###  [react基础入门](react基础入门.md)
 
-`React` 是一个用于构建用户界面的 JavaScript 库。前端三大视图框架之一。
+![code](../.vuepress/public/code.png) `React` 是一个用于构建用户界面的 JavaScript 库。前端三大视图框架之一。
 
-### [bootstrap基础入门](bootstrap基础入门.md)
+###  [bootstrap基础入门](bootstrap基础入门.md)
 
-`Bootstrap` 是全球最流行的前端开源工具包，它支持` Sass `变量和 `mixins`、响应式网格系统、大量的预建组件和强大的 `JavaScript `插件，助你快速设计和自定义响应式、移动设备优先的站点。
+![code](../.vuepress/public/code.png) `Bootstrap` 是全球最流行的前端开源工具包，它支持` Sass `变量和 `mixins`、响应式网格系统、大量的预建组件和强大的 `JavaScript `插件，助你快速设计和自定义响应式、移动设备优先的站点。
 
