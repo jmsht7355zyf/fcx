@@ -27,8 +27,9 @@ module.exports = {
             { text: '项目工程', link: '/Project/' },
             { text: '技术胶囊', link: '/Technology/' },
             {
-                text: '联系我',
+              text: '关于本人',
                 items: [
+                  {text: '联系我', link: '/About/' },
                   { text: 'Github', link: 'https://github.com/jmsht7355zyf' },
                   { text: '码云', link: 'https://gitee.com/jmsht7355' },
                   { text: '掘金', link: 'https://juejin.cn/user/4424090522232510' },
