@@ -7,16 +7,16 @@ sidebar: auto
 
 # QQ:2388475830
 
-[![qq](../.vuepress/public/about/qq.png )
+![qq](../.vuepress/public/about/qq.png )
 
 # WX:zyf7355
 
-[![wx](../.vuepress/public/about/wx.png )
+![wx](../.vuepress/public/about/wx.png )
 
 # EMAIL:jmsht7355@163.com
 
- [![email](../.vuepress/public/about/email.png )
+![email](../.vuepress/public/about/email.png )
 
 # 公众号：凡尘轩
 
- [![gzh](../.vuepress/public/about/wxgzh.jpg )
+![gzh](../.vuepress/public/about/wxgzh.jpg )
