@@ -21,8 +21,6 @@ sidebar: auto
 
 ![code](../.vuepress/public/code.png) 简单配置可参考[vuepress官网](https://vuepress.vuejs.org/zh/)
 
-![code](../.vuepress/public/code.png) 个人配置可参考博客内页[vuepress基配置](https://jmsht7355zyf.github.io/blog/Technology/vuepress基础配置.html)
-
 ### github地址
 
 [![fcx](../.vuepress/public/about/github.png)](https://github.com/jmsht7355zyf/fcx)	
