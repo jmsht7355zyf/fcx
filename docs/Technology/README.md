@@ -9,6 +9,8 @@ sidebar: auto
 
 ## 基础相关技术
 
+![base](../.vuepress/public/Tec/base.jpg)
+
 `涉及基础操作配置及简单工具使用如vim、git、markdown等包含文档书写、版本控制、文本编辑（包含编程软件的使用）。`
 
 ###  [vim简单配置](vim简单配置.md)
@@ -24,6 +26,8 @@ sidebar: auto
 ![code](../.vuepress/public/code.png) `markdown`语法是相对来说适合编写文档的必要语法。
 
 ## 前端基础技术
+
+![q-base](../.vuepress/public/Tec/q-base.jpg)
 
 `传统Html、Css、JavaScript,及其内容延申,(如html中特殊标签的使用、css中版本，语法涉及布局、样式、定位、盒模型等重要概念，以及JavaScript中相关重要内容)。`
 
@@ -49,6 +53,8 @@ sidebar: auto
 
 ## 前端基础拓展
 
+![q-tz](../.vuepress/public/Tec/q-tz.jpg)
+
 `除三件套以外涉及延申内容如（Sass、Typescript、Node等）。`
 
 ### [sass基础入门](sass基础入门.md)
@@ -60,6 +66,8 @@ sidebar: auto
 ![code](../.vuepress/public/code.png) `JavaScript`的超集，前端现阶段必须要掌握的语言之一。
 
 ## 前端相关框架
+
+![q-kj](../.vuepress/public/Tec/q-kj.jpg)
 
 `前端流行框架（Vue、React）及工程化、框架相关内容，延申前端UI框架、模块化编程、响应式编程、浏览器适配、等工程化问题。`
 
@@ -89,8 +97,11 @@ sidebar: auto
 
 ## 移动端应用技术
 
+![dd](../.vuepress/public/Tec/dd.jpg)
+
 `涉及微信小程序、h5、以及华为鸿蒙相关应用程序等移动端原始应用开发与工程搭建等相关内容。`
 
 ### [微信小程序入门](微信小程序入门.md)
 
 ![code](../.vuepress/public/code.png) 微信小程序是一种全新的连接用户与服务的方式，它可以在微信内被便捷地获取和传播，同时具有出色的使用体验。
+
