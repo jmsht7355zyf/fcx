@@ -3,7 +3,9 @@ title: 联系我
 sidebar: auto
 ---
 
-### `非诚勿扰、若通过社交账号联系我，请发私信、若通过wx、qq、email联系我请说明缘由，并告知身份。`
+ `非诚勿扰、若通过社交账号联系我，请发私信，本人不长登陆。且社交账号不常更新，若是催更也请发私信通知。`
+
+`若通过wx、qq、email联系我请说明缘由，并告知身份。最好使用Email与本人联系。`
 
 ### 社交账号
 
@@ -21,6 +23,7 @@ sidebar: auto
 
 ![email](../.vuepress/public/about/email.png )
 
-## 公众号：凡尘轩
+### 公众号：凡尘轩
 
 ![gzh](../.vuepress/public/about/wxgzh.jpg )
+
