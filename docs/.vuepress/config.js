@@ -12,6 +12,7 @@ module.exports = {
     plugins: {
         "vuepress-plugin-auto-sidebar": {}
       },
+    heroImage: 'hero.png',
     themeConfig: {
         logo: 'logo.png',
         smoothScroll: true,
