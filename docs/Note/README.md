@@ -53,6 +53,8 @@ sidebar: auto
 
 `迢遥的牧女的羊铃，摇落了轻的树叶。秋天的梦是轻的，那是窈窕的牧女之恋。于是我的梦静静地来了，但却载着沉重的昔日。哦，现在，我有一些寒冷，一些寒冷，和一些忧郁。`
 
+###  ![note](../.vuepress/public/note.png) [未来充满疑虑](未来充满疑虑.md)
+
 ### ![note](../.vuepress/public/note.png)  [踌躇满志，从头开始](踌躇满志，从头开始.md)
 
 ### ![note](../.vuepress/public/note.png)  [美好的夜，不美好的人](美好的夜，不美好的人.md)
