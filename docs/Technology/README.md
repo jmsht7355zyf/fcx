@@ -105,3 +105,10 @@ sidebar: auto
 
 ![code](../.vuepress/public/code.png) 微信小程序是一种全新的连接用户与服务的方式，它可以在微信内被便捷地获取和传播，同时具有出色的使用体验。
 
+## 设计相关技术
+
+![sj](../.vuepress/public/Tec/sj.jpg)
+
+`涉及平面设计、网站UI设计、视频特效、视频剪辑、主要为adobe全家桶的学习。`
+
+### [PS基础入门](PS基础入门.md)
