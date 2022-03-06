@@ -112,3 +112,9 @@ sidebar: auto
 `涉及平面设计、网站UI设计、视频特效、视频剪辑、主要为adobe全家桶的学习。`
 
 ### [PS基础入门](PS基础入门.md)
+
+![code](../.vuepress/public/code.png) 涉及PS软件最基础知识及相关内容概念。
+
+### [PS实例练习](PS实例练习.md)
+
+![code](../.vuepress/public/code.png) 根据基础的PS相关知识，提供的简单实例。
