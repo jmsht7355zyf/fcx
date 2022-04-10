@@ -95,6 +95,14 @@ sidebar: auto
 
 ![code](../.vuepress/public/code.png) `Bootstrap` 是全球最流行的前端开源工具包，它支持` Sass `变量和 `mixins`、响应式网格系统、大量的预建组件和强大的 `JavaScript `插件，助你快速设计和自定义响应式、移动设备优先的站点。
 
+## 后端基础技术
+
+后端脚本或编译性语言、linux基础技术等相关内容
+
+![dd](../.vuepress/public/Tec/hd.jpg)
+
+###  [python基础入门](python基础入门.md)
+
 ## 移动端应用技术
 
 ![dd](../.vuepress/public/Tec/dd.jpg)
