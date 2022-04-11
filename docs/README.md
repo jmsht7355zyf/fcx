@@ -17,13 +17,6 @@ sidebar: auto
 
 ## 具体板块
 
-### [个人日记](../Note/README.md) 
-
-主要为私人手写笔记等记录内容，涉及个人感悟及记录经历等内容
-
-### [摘录笔记](../Extract/README.md) 
-
-个人阅读内容、相关参考素材，摘录等内容
 
 ### [技术胶囊](../Technology/README.md)
 

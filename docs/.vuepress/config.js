@@ -23,8 +23,6 @@ module.exports = {
           },
         nav: [
             { text: '首页', link: '/' },
-            { text: '个人日记', link: '/Note/' },
-            { text: '摘录笔记', link: '/Extract/' },
             { text: '中文文档', link: '/Doc/' },
             { text: '项目工程', link: '/Project/' },
             { text: '技术胶囊', link: '/Technology/' },
