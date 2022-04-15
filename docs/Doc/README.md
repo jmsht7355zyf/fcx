@@ -59,6 +59,20 @@ sidebar: auto
 
 ![code](../.vuepress/public/code.png) 这是 `Ant Design` 的 `Vue` 实现，开发和服务于企业级后台产品。
 
+## 后端框架与技术栈
+
+### [Python官方中文文档](https://docs.python.org/zh-cn/3/)
+
+![python](../.vuepress/public/doc/python.jpg)
+
+![code](../.vuepress/public/code.png) `Python`提供了高效的高级数据结构，还能简单有效地面向对象编程。`Python`语法和动态类型，以及解释型语言的本质，使它成为多数平台上写脚本和快速开发应用的编程语言。
+
+### [C#官方中文文档](https://docs.microsoft.com/zh-cn/dotnet/csharp/)
+
+![c#](../.vuepress/public/doc/cSharp.jpg)
+
+![code](../.vuepress/public/code.png) `C#`是微软公司在2000年6月发布的一种新的编程语言,运行于`.NET Framework`和`.NET Core`(完全开源，跨平台)之上的高级程序设计语言。
+
 ## 辅助工具
 
 ### [Vite官方中文文档](https://cn.vitejs.dev/)
