@@ -221,3 +221,85 @@ print(res3);
 print(res4);
 print(res5);
 ```
+
+## 基本运算符
+
+### 算术运算符
+
+加减乘除。
+
+```python
+print(10 + 3);
+print(10 - 3);
+print(10 * 3);
+print(10 / 3);
+print(10 // 3);  #只保留整数
+print(10 % 3);  #取余数
+print(10 ** 3);  #取模、取余数
+
+输出结果：
+13
+7
+30
+3.3333333333333335
+3
+1
+1000
+```
+
+### 比较运算符
+
+```python
+print(10 > 3);
+print(10 < 3);
+print(10 == 3);
+print(10 >= 3);
+print(10 <= 3);
+print(10 != 3);
+
+输出结果：
+True
+False
+False
+True
+False
+True
+```
+
+### 赋值运算符
+
+```python
+#增量赋值
+age = 18;
+age = age + 1;  #也可写作： age += 1;
+print(age);
+#链式赋值
+z = y = x = 10; #也可写作：x = 10;y = x;z = y;  
+print(x,y,z);
+print(id(x),id(y),id(z));
+#交叉赋值
+m = 10;
+n = 20;
+m,n = n,m;  #也可写作：temp = m;m = n;n = temp;
+print(m,n);
+#解压赋值
+num = [1,2,3,4,5];
+num1,num2,num3,num4,num5 = num;  #也可写作：num1 = num[1];num2 = num[2];num3 = num[3];num4 = num[4];num5 = num[5];
+numer1,numer2,numer3,*_ = num;  #取前3个值进行解压赋值，*代表将没有对应关系的变量存成列表，_一般代表即将废弃的变量名
+print(num1,num2,num3,num4,num5); #变量名不能少于解压的值的个数
+print(numer1,numer2,numer3);
+dic = {a:1,b:2,c:3};  #解压字典默认解压key
+a,b,c = dic;
+print(a,b,c);
+
+输出结果：
+19
+10 10 10
+1911422478928 1911422478928 1911422478928
+20 10
+1 2 3 4 5
+1 2 3
+a b c
+```
+
+### 逻辑运算符
