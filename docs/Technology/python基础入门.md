@@ -339,3 +339,62 @@ True
 ### 身份运算符
 
 `is`判断的是id是否相等。
+
+## 条件判断
+
+案例1：
+
+```python
+age = 18;
+is_beautiful = True;
+star = "白羊座";
+if age > 16 and age < 20 and is_beautiful and star == "白羊座":
+    print("匹配成功！");
+
+输出结果：匹配成功！
+```
+
+案例2：
+
+```python
+age = 60;
+is_beautiful = True;
+star = "白羊座";
+if age > 16 and age < 20 and is_beautiful and star == "白羊座":
+    print("匹配成功！");
+else:
+    print("匹配不成功！");
+
+输出结果：匹配不成功！
+```
+
+案例3：
+
+```python
+score = input("请输入你的成绩：");
+score = int(score);
+if score < 0 or score > 100:
+    print("你输入的成绩为不合规！");
+elif score >= 90 and score < 100:
+    print("你的成绩为优秀！");
+elif score >= 80 and score < 90:
+    print("你的成绩为良好！");
+elif score >= 70 and score < 80:
+    print("你的成绩为中等！");
+elif score >= 60 and score < 70:
+    print("你的成绩为及格！");
+else:
+    print("你的成绩为不及格！");
+
+输出结果（多次输入数字）：
+请输入你的成绩：-20
+你输入的成绩为不合规！
+请输入你的成绩：56
+你的成绩为不及格！
+请输入你的成绩：70
+你的成绩为中等！
+请输入你的成绩：80
+你的成绩为良好！
+请输入你的成绩：92
+你的成绩为优秀！
+```
