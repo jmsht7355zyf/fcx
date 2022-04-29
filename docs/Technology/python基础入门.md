@@ -306,9 +306,9 @@ a b c
 
 #### 可变不可变类型
 
-1. 可变类型：值改变，id不变的具体数据类型（改变的是原值）
+1. 可变类型：值改变，id不变的具体数据类型（改变的是原值）。
 
-2. 不可变类型：值改变，id也改变的具体数据类型。（产生了新的值，原值是不可以被修改）
+2. 不可变类型：值改变，id也改变的具体数据类型。（产生了新的值，原值是不可以被修改）。
 
 #### 类型分类
 
@@ -414,4 +414,203 @@ else:
 你的成绩为良好！
 请输入你的成绩：92
 你的成绩为优秀！
+```
+## 循环语句
+
+### while循环
+
+简单案例1：
+
+```python
+count = 0;
+while count < 5:
+    print(count);
+    count += 1;
+
+输出结果：
+0
+1
+2
+3
+4
+```
+
+### 死循环与运行效率
+
+纯计算没有IO参与的运算会导致致命的效率问题。
+
+### while循环基本应用与简单示例
+
+#### while+break
+
+案例1：输入对应的姓名密码，并输出完成操作。
+
+```python
+
+usrname = 'zyf';
+password = '12345';
+
+while True:
+    inp_name = input("请输入您的姓名：");
+    inp_pwd = input("请输入您的密码：");
+    if inp_name == usrname and inp_pwd == password:
+        print("登录成功！");
+        break;
+    else:
+        print("您的输入有误，请重新输入！");
+
+print("您已完成操作！");
+
+输出结果（成功输入）：
+请输入您的姓名：zyf
+请输入您的密码：12345
+登录成功！
+您已完成操作！
+```
+
+案例2：输入对应的姓名密码，并输入q字符命令，结束程序。
+
+```python
+
+usrname = 'zyf';
+password = '12345';
+
+while True:
+    inp_name = input("请输入您的姓名：");
+    inp_pwd = input("请输入您的密码：");
+    if inp_name == usrname and inp_pwd == password:
+        print("登录成功！");
+        while True:
+            cmd = input("请输入指令：");
+            if cmd == 'q':
+                break;
+            print("命令{x}正在运行!".format(x = cmd));
+        break;
+    else:
+        print("您的输入有误，请重新输入！");
+
+print("您已完成操作！");
+
+输出结果：
+请输入您的姓名：zyf
+请输入您的密码：12345
+登录成功！
+请输入指令：a
+命令a正在运行!
+请输入指令：q
+您已完成操作！
+```
+#### 同一判断变量控制循环
+案例3：输入对应的姓名密码，并输入q字符命令，结束程序（另外一种方式）。
+```python
+usrname = 'zyf';
+password = '12345';
+tag = True;
+while tag:
+    inp_name = input("请输入您的姓名：");
+    inp_pwd = input("请输入您的密码：");
+    if inp_name == usrname and inp_pwd == password:
+        print("登录成功！");
+        while tag:
+            cmd = input("请输入指令：");
+            if cmd == 'q':
+                tag = False;
+            else:
+                print("命令{x}正在运行!".format(x = cmd));
+        
+    else:
+        print("您的输入有误，请重新输入！");
+
+print("您已完成操作！并退出!");
+
+输出结果：
+请输入您的姓名：zyf
+请输入您的密码：12345
+登录成功！
+请输入指令：a
+命令a正在运行!
+请输入指令：q
+您已完成操作！并退出!
+```
+
+#### while+continue
+
+案例4：打印0·5的数，其中跳过4的打印。
+```python
+count = 0;
+while count < 6:
+    if count == 4:
+        count += 1;
+        continue;
+    print(count);
+    
+```
+
+#### while+else
+
+若while循环中，针对break，用else跳出循环。
+
+案例5：
+```python
+usrname = 'zyf';
+password = '12345';
+count = 0;
+tag = True;
+while tag:
+    if count == 3:
+        print("输入错误次数过多！");
+        break;
+    inp_name = input("请输入您的姓名：");
+    inp_pwd = input("请输入您的密码：");
+    if inp_name == usrname and inp_pwd == password:
+        print("登录成功！");
+        while tag:
+            cmd = input("请输入指令：");
+            if cmd == 'q':
+                tag = False;
+            else:
+                print("命令{x}正在运行!".format(x = cmd));
+    else:
+        print("您的输入有误，请重新输入！");
+        count += 1;
+print("您已完成操作！并退出!");
+
+输出结果：
+请输入您的姓名：asdf
+请输入您的密码：fsdf
+您的输入有误，请重新输入！
+请输入您的姓名：dfsd
+请输入您的密码：sdf
+您的输入有误，请重新输入！
+请输入您的姓名：sdf
+请输入您的密码：sdf
+您的输入有误，请重新输入！
+输入错误次数过多！
+您已完成操作！并退出!
+```
+
+案例6：不用tag作为所有循环的控制条件，来实现案例5的效果。
+```python
+usrname = 'zyf';
+password = '12345';
+count = 0;
+tag = True;
+while count < 3:
+    inp_name = input("请输入您的姓名：");
+    inp_pwd = input("请输入您的密码：");
+    if inp_name == usrname and inp_pwd == password:
+        print("登录成功！");
+        while True:
+            cmd = input("请输入指令：");
+            if cmd == 'q':
+                break;
+            else:
+                print("命令{x}正在运行!".format(x = cmd));
+        break;
+    else:
+        print("您的输入有误，请重新输入！");
+        count += 1;
+else:
+    print("输入错误次数过多！")        
+print("您已完成操作！并退出!");
 ```
