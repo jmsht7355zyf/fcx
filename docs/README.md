@@ -21,15 +21,15 @@ sidebar: auto
 
 ### ![code](../docs/.vuepress/public/code-mid.png)&emsp;&emsp;[技术胶囊](../Technology/README.md)
 
-<h3>前端、设计相关技术学习笔记,前端三剑客、三大框架，涉及PC、移动端等板块</h3>
-<h3>adobe设计四件套,后端linux基础以及运维相关内容</h3>
+<h3>前端、设计相关技术学习笔记</h3>
+前端三剑客、三大框架，涉及PC、移动端等板块，adobe设计四件套,后端linux基础以及运维相关内容
 
 ![js](../docs/.vuepress/public/jn.jpg)
 
 ### ![code](../docs/.vuepress/public/code-mid.png)&emsp;&emsp;[中文文档](../Doc/README.md)
 
-<h3>前端学习官方或非官方中文文档或博客</h3>
-<h3>后端与`Linux`运维和计算机基础,相关的算法等其他内容</h3>
+<h3>官方或非官方中文文档或博客</h3>
+前端、后端、`Linux`运维、计算机基础、算法等其他内容
 
 ![doc](../docs/.vuepress/public/p-doc.jpg)
 
@@ -42,7 +42,6 @@ sidebar: auto
 ### ![code](../docs/.vuepress/public/code-mid.png)&emsp;&emsp;[关于本人](../About/README.md)
 
 <h3>联系我,获取本人相关的联系方式</h3>
-
 
 ![github](../docs/.vuepress/public/about/github.png)
 ![github](../docs/.vuepress/public/about/gitee.png)
