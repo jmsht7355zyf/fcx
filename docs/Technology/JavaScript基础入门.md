@@ -796,7 +796,7 @@ console.log(num1);
 
 ## 函数
 
-**编程范式：**面向对象编程（Java/C++/JavaScript（基于对象））、面向过程编程（C）、函数式编程（JavaScript、lisp/scheme）
+编程范式：面向对象编程（Java/C++/JavaScript（基于对象））、面向过程编程（C）、函数式编程（JavaScript、lisp/scheme）
 
 > 函数其实就是对某段代码的封装，这段代码帮助我们完成某一项功能。
 
