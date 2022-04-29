@@ -15,21 +15,40 @@ footer: MIT Licensed | Copyright © 2018-present 郑依凡
 sidebar: auto
 ---
 
-## 具体板块
+## <center>具体板块</center>
+
+<center>
+
+### ![code](../docs/.vuepress/public/code-mid.png)&emsp;&emsp;[技术胶囊](../Technology/README.md)
+
+<h3>前端、设计相关技术学习笔记,前端三剑客、三大框架，涉及PC、移动端等板块</h3>
+<h3>adobe设计四件套,后端linux基础以及运维相关内容</h3>
+
+![js](../docs/.vuepress/public/jn.jpg)
+
+### ![code](../docs/.vuepress/public/code-mid.png)&emsp;&emsp;[中文文档](../Doc/README.md)
+
+<h3>前端学习官方或非官方中文文档或博客</h3>
+<h3>后端与`Linux`运维和计算机基础,相关的算法等其他内容</h3>
+
+![doc](../docs/.vuepress/public/p-doc.jpg)
+
+### ![code](../docs/.vuepress/public/code-mid.png)&emsp;&emsp;[项目工程](../Project/README.md)
+
+<h3>个人项目及练习地址，主要存到于GitHub</h3>
+
+![blog](../docs/.vuepress/public/github-pro.jpg)
+
+### ![code](../docs/.vuepress/public/code-mid.png)&emsp;&emsp;[关于本人](../About/README.md)
+
+<h3>联系我,获取本人相关的联系方式</h3>
 
 
-### [技术胶囊](../Technology/README.md)
+![github](../docs/.vuepress/public/about/github.png)
+![github](../docs/.vuepress/public/about/gitee.png)
+![github](../docs/.vuepress/public/about/juejin.png)
+![github](../docs/.vuepress/public/about/zhihu.png)
+![github](../docs/.vuepress/public/about/sina.png)
+![github](../docs/.vuepress/public/about/bilibili.png)
 
-前端、设计相关技术学习笔记，主要以前端三剑客、三大框架，涉及PC、移动端等板块，以及adobe设计四件套及具体实例
-
-### [中文文档](../Doc/README.md)
-
-前端学习官方或非官方中文文档或博客，更多涉及前端相关知识
-
-### [项目工程](../Project/README.md)
-
-个人项目及练习地址，主要存到于GitHub
-
-### [关于本人](../About/README.md)
-
-联系我，请点击相关链接来获取本人相关的联系方式，注意非诚勿扰
+ </center>
