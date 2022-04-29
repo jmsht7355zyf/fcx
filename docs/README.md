@@ -22,7 +22,7 @@ sidebar: auto
 ### ![code](../docs/.vuepress/public/code-mid.png)&emsp;&emsp;[技术胶囊](../Technology/README.md)
 
 <h3>前端、设计相关技术学习笔记</h3>
-前端三剑客、三大框架，涉及PC、移动端等板块，adobe设计四件套,后端linux基础以及运维相关内容
+前端三剑客、三大框架，涉及PC、移动端,后端linux基础、及运维相关内容
 
 ![js](../docs/.vuepress/public/jn.jpg)
 
@@ -36,6 +36,7 @@ sidebar: auto
 ### ![code](../docs/.vuepress/public/code-mid.png)&emsp;&emsp;[项目工程](../Project/README.md)
 
 <h3>个人项目及练习地址，主要存到于GitHub</h3>
+常规项目练习，不涉及商业部分，参考价值较小
 
 ![blog](../docs/.vuepress/public/github-pro.jpg)
 
