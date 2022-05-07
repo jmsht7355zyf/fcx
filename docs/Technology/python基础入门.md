@@ -614,3 +614,127 @@ else:
     print("输入错误次数过多！")        
 print("您已完成操作！并退出!");
 ```
+
+### for循环
+
+`for`循环在取值方面，比`while`循环取值更加方便，在书写理解方面效果更高（如遍历取值）。
+
+终止`for`循环只有break一种方式。
+
+#### 可迭代对象
+
+列表、字典、字符串、元组、集合。
+
+案例1：循环取值
+
+```python
+for x in ['asdvx','asdb','adghsd']:
+    print(x);
+
+输出结果：
+asdvx
+asdb
+adghsd
+```
+
+案例2：用while循环来实现
+
+```python
+l = ['asdvx','asdb','adghsd'];
+i = 0;
+while i < 3:
+    print(l[i]);
+    i += 1;
+
+输出结果：
+asdvx
+asdb
+adghsd
+```
+
+#### for + range
+
+案例3：控制循环次数
+
+```python
+for x in range(3):
+    print('zyf');
+
+输出结果：
+zyf
+zyf
+zyf
+```
+
+案例4：
+```python
+usrname = 'zyf';
+password = '12345';
+count = 0;
+for i in range(3):
+    inp_name = input("请输入您的姓名：");
+    inp_pwd = input("请输入您的密码：");
+    if inp_name == usrname and inp_pwd == password:
+        print("登录成功！");
+        while True:
+            cmd = input("请输入指令：");
+            if cmd == 'q':
+                break;
+            else:
+                print("命令{x}正在运行!".format(x = cmd));
+        break;
+    else:
+        print("您的输入有误，请重新输入！");
+        count += 1;
+else:
+    print("输入错误次数过多！")        
+print("您已完成操作！并退出!");
+```
+
+#### for + continue
+
+案例5：
+
+```python
+for i in range(6):
+    if i == 4:continue;
+    print(i)
+
+输出结果：
+0
+1
+2
+3
+5
+```
+
+### for循环嵌套
+
+案例6：
+
+```python
+for i in range(3):
+    print('外循环-->',i);
+    for j in range(5):
+        print('内循环-->',j);
+
+输出结果：
+外循环--> 0
+内循环--> 0
+内循环--> 1
+内循环--> 2
+内循环--> 3
+内循环--> 4
+外循环--> 1
+内循环--> 0
+内循环--> 1
+内循环--> 2
+内循环--> 3
+内循环--> 4
+外循环--> 2
+内循环--> 0
+内循环--> 1
+内循环--> 2
+内循环--> 3
+内循环--> 4
+```
