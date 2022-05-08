@@ -738,3 +738,273 @@ for i in range(3):
 内循环--> 3
 内循环--> 4
 ```
+
+## 数字类型
+
+### int类型
+
+数字中的整数类型。
+
+```python
+age = 10;  # age = int(10)
+```
+
+#### 类型转换
+
+用`int()`转换为数字整数类型。
+
+```python
+#其他类型转int类型
+res1 = int('101010');
+print(res1);
+#10进制转2进制
+print(bin(23));
+#10进制转8进制
+print(oct(23));
+#10进制转16进制
+print(hex(23));
+#2进制转10进制
+print(int('0b10010',2));
+#8进制转10进制
+print(int('0o10010',8));
+#16进制转10进制
+print(int('0x10010',16));
+
+输出结果：
+101010
+0b10111
+0o27
+0x17
+18
+4104
+65552
+```
+
+### float类型
+
+数字中的小数（浮点）类型。
+
+#### 类型转换
+
+用`float()`转换为数字小数（浮点）类型。
+
+```python
+print(float('324.45'));
+```
+
+## 字符串类型
+
+### 类型转换
+
+用`str()`转换为字符串类型。
+
+### 内置方法
+
+#### 按索引取值、
+
+```python
+#正向取值
+msg = 'hello world';
+print(msg[0]);
+#反向取值
+print(msg[-1]);
+
+输出结果：
+h
+d
+```
+
+#### 字符串大小写转换
+
+```python
+msg = 'Hello World'
+print(msg.lower());
+print(msg.upper());
+#首字母大写
+print(msg.capitalize());
+#每个单词字母大写
+print(msg.title());
+#大小写转换
+print(msg.swapcase());
+
+输出结果：
+hello world
+HELLO WORLD
+Hello world
+Hello World
+hELLO wORLD
+```
+
+#### 切片方法
+
+```python
+msg = 'hello world';
+#切片
+print(msg[0:5]);
+#步长
+print(msg[0:5:2]);
+#反向步长
+print(msg[11:5:-2]);
+
+输出结果：
+hello
+hlo
+drw
+```
+#### 移除两侧多余符号
+
+```python
+#移除字符串左右两边的符号
+msg1 = '***hello world***'
+print(msg1.strip('*'));
+print(msg1.lstrip('*'));
+print(msg1.rstrip('*'));
+
+输出结果：
+hello world
+hello world***
+***hello world
+```
+
+#### 切分方法
+
+```python
+#切分
+info1 = 'zyf 18 male';
+#默认分割符为空格
+print(info1.split());
+info2 = 'zyf 18 male';
+print(info2.split(':'));
+
+输出结果：
+['zyf', '18', 'male']
+['zyf', '18', 'male']
+```
+
+#### 把列表拼接成字符串
+
+```python
+list = ['zyf', '18', 'male'];
+res = ':'.join(list);
+print(res);
+
+输出结果：
+zyf:18:male
+```
+
+#### 字符串替换方法
+
+```python
+msg = 'zyf is 18';
+print(msg.replace('zyf','ZYF'));
+
+输出结果：ZYF is 18
+```
+
+#### 判断字符串是否由纯数字组成
+
+```python
+print('124454'.isdigit());
+print('1244A4'.isdigit());
+
+输出结果：
+True
+False
+```
+
+#### 判断首尾字符串
+
+```python
+print('zyf is 18'.startswith('zyf'));
+print('zyf is 18'.endswith('18'));
+
+输出结果：
+True
+True
+```
+
+案例1：规避空格带来的输入错误
+```python
+inp_usr = input('your name:').strip();
+inp_pwd = input('your password:').strip();
+if inp_usr == 'zyf' and inp_pwd == '123':
+    print('登录成功！');
+else:
+    print('账号密码错误！');  
+```
+
+#### 查找字符串
+
+返回要查找的字符串在大字符串的起始索引,`index`与`find`的区别在于在无法找到索引时，`index`会使程序停止或奔溃。
+
+```python
+msg ='zyf is a cool boy';
+print(msg.find('z'));
+print(msg.find('zyf'));
+print(msg.find('a'));
+print(msg.index('z'));
+print(msg.index('zyf'));
+print(msg.index('a'));
+
+输出结果：
+0
+0
+7
+0
+0
+7
+```
+
+#### 字符串计数
+
+```python
+msg ='zyf is a cool boy';
+print(msg.count('z'));
+
+输出结果：1
+```
+
+#### 字符串填充
+
+```python
+msg ='zyf is a cool boy';
+print('zyf is a cool boy'.center(30,'*'));
+print('zyf is a cool boy'.ljust(30,'*'));
+print('zyf is a cool boy'.rjust(30,'*'));
+print('zyf is a cool boy'.zfill(30));
+
+输出结果：
+******zyf is a cool boy*******
+zyf is a cool boy*************
+*************zyf is a cool boy
+0000000000000zyf is a cool boy
+```
+
+#### 字符串is方法
+
+```python
+msg = 'Hello World'
+#判断是否全为小写
+print(msg.islower());
+#判断是否全为大写
+print(msg.isupper());
+#判断单词首字母是否全为大写
+print(msg.istitle());
+#判断是否全为字母或数字组成
+print(msg.isalnum());
+#判断是否全为字母组成
+print(msg.isalpha());
+#判断是否全为空格
+print(msg.isspace());
+#判断是否为内置关键字 或合法的标识符（自定义标识符判断）
+print(msg.isidentifier());
+
+输出结果：
+False
+False
+True
+False
+False
+False
+False
+```
