@@ -97,8 +97,6 @@ sidebar: auto
 
 ## 后端基础技术
 
-后端脚本或编译性语言、linux基础技术等相关内容
-
 ![dd](../.vuepress/public/Tec/hd.jpg)
 
 `后端相关基础知识包含后端基本语言、数据库、及相关概念，还有Linux相关知识。`

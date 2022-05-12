@@ -29,7 +29,7 @@ sidebar: auto
 ### ![code](../docs/.vuepress/public/code-mid.png)&emsp;&emsp;[中文文档](../Doc/README.md)
 
 <h3>官方或非官方中文文档或博客</h3>
-前端、后端、`Linux`运维、计算机基础、算法等其他内容
+前端、后端、Linux运维、计算机基础、算法等其他内容
 
 ![doc](../docs/.vuepress/public/p-doc.jpg)
 
