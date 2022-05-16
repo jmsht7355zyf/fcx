@@ -1008,3 +1008,91 @@ False
 False
 False
 ```
+
+## 列表类型
+
+### 类型转换
+
+```python
+#list方法 不同的类型转换为list会有不同的结果
+res1 = list('hello');
+res2 = list({'k1':'111','k2':'222'});
+print(res1,res2);
+
+输出结果：
+['h', 'e', 'l', 'l', 'o'] ['k1', 'k2']
+```
+
+### 内置方法
+
+列表的增删改查：
+
+```python
+# 按照索引取值
+l1 = ['zyf','hello','world'];
+#正反向取值
+print(l1[1],l1[-1]);
+#添加值
+l1.append(20);
+print(l1);
+#插入值
+l1.insert(1,'jmsht');
+#列表合并插入
+l2 = [1,2,3];
+l1.extend(l2);
+print(l1);
+#删除值 通用删除方法，没有任何返回值
+del l1[-1]; #不支持赋值
+print(l1);
+# .pop() 删除方法 根据索引删除，不传入值，则默认删除最后一个值
+res1 = l1.pop(-2);
+# 该方法返回值为删除的值
+print(res1);
+# .remove 根据元素删除
+l1.remove(2);
+print(l1);
+#切片 相当于浅拷贝
+print(l1[0:4:2]);
+# 长度 及是否为成员
+print(len(l1));
+print('zsx' in l1);
+
+输出结果：
+hello world
+['zyf', 'hello', 'world', 20]
+['zyf', 'jmsht', 'hello', 'world', 20, 1, 2, 3]
+['zyf', 'jmsht', 'hello', 'world', 20, 1, 2]
+1
+['zyf', 'jmsht', 'hello', 'world', 20]
+['zyf', 'hello']
+5
+False
+```
+
+其他列表基本操作：
+
+```python
+l1 = ['zyf','hello','world'];
+# 统计个数
+print(l1.count('zyf'));
+# 查找索引
+print(l1.index('zyf'));
+#反转列表
+l1.reverse();
+print(l1);
+# 排序
+l2 = [22,11,46,23,24];
+#降序
+l2.sort(reverse=True);
+print(l2);
+#清空列表
+l1.clear();
+print(l1);
+
+输出结果：
+1
+0
+['world', 'hello', 'zyf']
+[46, 24, 23, 22, 11]
+[]
+```
