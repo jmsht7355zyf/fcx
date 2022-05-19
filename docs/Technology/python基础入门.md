@@ -1096,3 +1096,362 @@ print(l1);
 [46, 24, 23, 22, 11]
 []
 ```
+
+## 元组类型
+
+某种程度而言，元组就是一种不可变的列表。按照索引存放多个值，只用于读不用于改。
+
+注意：如果元组中只有一个元素，必须加逗号分割。
+
+### 定义
+
+```python
+t = (1,3.1,'zyf',[1,2,3]);
+print(t,type(t));
+
+输出结果：
+(1, 3.1, 'zyf', [1, 2, 3]) <class 'tuple'>
+```
+
+### 类型转换
+
+```python
+print(tuple('hello'));
+print(tuple([1,2,3]));
+print(tuple({'a1':'zyf','a2':123}));
+
+输出结果：
+('h', 'e', 'l', 'l', 'o')
+(1, 2, 3)
+('a1', 'a2')
+```
+
+### 内置方法
+
+```python
+# 按索引取值
+t = ('zyf','world',18,'60kg');
+print(t[0]);
+print(t[-1]);
+#切片
+print(t[0:2]);
+print(t[::-1]);
+#长度
+print(len(t))
+#成员问题
+print('zyf' in t);
+print('za' in t);
+#其他方法
+print(t.index('zyf'));
+print(t.count(t));
+
+输出结果：
+zyf
+60kg
+('zyf', 'world')
+('60kg', 18, 'world', 'zyf')
+4
+True
+False
+0
+0
+```
+
+## 字典类型
+
+### 定义
+
+`{}`内用逗号分割，key值为不可变类型，value为任意类型。
+
+```python
+d1 = {'k1':111,'k2':(1,2,3)};
+d2 = dict(x = 1,y = 2,z = 3);
+print(d1,type(d1),'\n',d2,type(d2));
+
+输出结果：
+{'k1': 111, 'k2': (1, 2, 3)} <class 'dict'> 
+{'x': 1, 'y': 2, 'z': 3} <class 'dict'>
+```
+
+### 类型转换
+
+#### 列表转化为字典
+
+方法1：传统循环方式转换
+
+```python
+list1 = [
+    ['name','zyf'],
+    ['age',18],
+    ['weight','60kg']
+]; 
+d = {};
+for k,v in list1:
+    d[k] = v;
+print(d);
+
+输出结果：
+{'name': 'zyf', 'age': 18, 'weight': '60kg'}
+```
+
+方法2：内置方法
+
+```python
+list1 = [
+    ['name','zyf'],
+    ['age',18],
+    ['weight','60kg']
+]; 
+res = dict(list1);
+print(res);
+
+输出结果：
+{'name': 'zyf', 'age': 18, 'weight': '60kg'}
+```
+
+方法3：对于key确定，value不确定的列表，转换为字典。（快速初始化字典）
+
+```python
+keys = ['name','age','weight'];
+d1 = {};
+# 方式一
+for k in keys:
+    d1[k] = None;
+print(d1);
+# 方式2
+d2 = {}.fromkeys(keys,None);
+print(d2);
+
+输出结果：
+{'name': None, 'age': None, 'weight': None}
+{'name': None, 'age': None, 'weight': None}
+```
+
+### 内置方法
+
+常用方法：
+
+```python
+d1 = {  'name': None, 
+        'age': None, 
+        'weight': None};
+# 赋值操作
+d1['name'] = 'zyf';
+d1['age'] = 18;
+d1['weight'] = '60kg';
+d1['height'] = '170cm';
+print(d1);
+#统计key个数
+print(len(d1));
+#删除
+#根据key删除 返回删除key对应的value
+d1.pop('weight');
+print(d1);
+#随机删除 返回元组
+d1.popitem();
+# 循环字典中的key,index,item
+print(list(d1.keys()));
+print(list(d1.values()));
+print(list(d1.items()));
+
+输出结果：
+{'name': 'zyf', 'age': 18, 'weight': '60kg', 'height': '170cm'}
+4
+{'name': 'zyf', 'age': 18, 'height': '170cm'}
+['name', 'age']
+['zyf', 18]
+[('name', 'zyf'), ('age', 18)]
+```
+
+其他方法：
+```python
+d1 = {'k1':111};
+d2 = {'k1':111,'k2':222};
+#清空字典内的内容
+d1.clear();
+print(d1);
+#更新扩容字典
+d2.update({'k3':333});
+print(d2) ;
+print(d2.get('k3')); #key不存在，返回none
+#key存在,则不用做添加操作，若不存在，则将内容添加
+print(d2.setdefault('k1',333)); 
+print(d2.setdefault('k4',333)); 
+print(d2);   
+
+输出结果：
+{}
+{'k1': 111, 'k2': 222, 'k3': 333}
+333
+111
+333
+{'k1': 111, 'k2': 222, 'k3': 333, 'k4': 333}
+```
+
+## 集合类型
+
+### 定义
+
+在`{}`内用逗号分割多个元素，多个元素满足以下条件：
+
+- 集合内元素必须为不可变类型
+- 集合内元素无序
+- 集合内元没有重复
+
+### 类型转换
+
+```python
+s1 = set('hello');
+s2 = set({'k1':111,'k2':222});
+# 输出结果无序，因为集合本身就是无序的
+print(s1);  
+print(s2);  
+
+输出结果：
+{'l', 'e', 'o', 'h'}
+{'k1', 'k2'}
+```
+
+### 内置方法
+
+```python
+s = {1,2,3};
+# 删除集合内的元素
+s.discard(3);
+print(s);
+# 删除元素不存在则会报错
+s.remove(2);
+print(s);
+# 更新集合，添加新集合进入原集合
+s.update({1,2,3,4});
+print(s);
+# 添加元素
+s.add(5);
+print(s);
+#判读两个集合完全独立，没有共同部分，返回true
+s1 = {11,12,13};
+print(s.isdisjoint(s1));
+
+输出结果：
+{1, 2}
+{1}
+{1, 2, 3, 4}
+{1, 2, 3, 4, 5}
+True
+```
+
+案例1：取出共同的好友，成立一个新的列表。
+
+```python
+friends1 = ['zyf','had','jmsht','lilin','heze'];
+friends2 = ['zyf','hadsa','jmsht','lilindf','hezecv'];
+l = [];
+for x in friends1:
+    if x in friends2:
+        l.append(x);
+print(l);
+
+输出结果：
+['zyf', 'jmsht']
+```
+
+案例2：用集合运算的方法来获取。
+
+```python
+friends1 = {'zyf','had','jmsht','lilin','heze'};
+friends2 = {'zyf','hadsa','jmsht','lilindf','hezecv'};
+#求交集 共同好友
+res = friends1 & friends2
+print(res);
+
+输出结果：
+{'jmsht', 'zyf'}
+```
+
+### 关系运算
+
+案例3：取出两者好友的相关集合运算。
+
+```python
+friends1 = {'zyf','had','jmsht','lilin','heze'};
+friends2 = {'zyf','hadsa','jmsht','lilindf','hezecv'};
+# 所有的好友
+# friends1.union(friends2);
+print(friends1 | friends2); 
+# friends1独有的好友
+# friends1.difference(friends2);
+print(friends1 - friends2);
+# friends2独有的好友
+# friends2.difference(friends1);
+print(friends2 - friends1);
+# 两者独有的好友(去掉共有的好友)
+# friends1.symmetric_difference(friends2);
+print(friends2 ^ friends1);
+# 判断父子集合
+s1 = {1,2,3,4,5};
+s2 = {1,2,3};
+print(s1 > s2);
+print(s1.issuperset(s2));
+print(s2.issuperset(s1));
+
+输出结果：
+'lilindf', 'had', 'lilin', 'zyf', 'hezecv', 'heze', 'hadsa', 'jmsht'}
+{'lilin', 'heze', 'had'}
+{'hadsa', 'lilindf', 'hezecv'}
+{'lilindf', 'hezecv', 'heze', 'had', 'hadsa', 'lilin'}
+True
+True
+False
+```
+
+### 去重
+
+集合去重的局限性：
+
+1. 只能针对不可变类型去重。
+2. 无法保证原来的顺序。
+
+案例4：对以下列表进行去重。
+
+```python
+l1 = [
+    {'name':'lolo','age':18,'sex':'male'},
+    {'name':'jack','age':12,'sex':'male'},
+    {'name':'lol','age':18,'sex':'female'},
+    {'name':'lolo','age':18,'sex':'male'},
+    {'name':'loloa','age':128,'sex':'male'},
+    {'name':'lolo','age':11,'sex':'female'},
+    {'name':'lolo','age':18,'sex':'female'},
+    {'name':'lolo','age':18,'sex':'male'}
+]
+
+new_l = [];
+for dic in l1:
+    if dic not in new_l:
+        new_l.append(dic);
+
+print(new_l);
+
+输出结果：
+[{'name': 'lolo', 'age': 18, 'sex': 'male'}, {'name': 'jack', 'age': 12, 'sex': 'male'}, {'name': 'lol', 'age': 18, 'sex': 'female'}, {'name': 'loloa', 'age': 128, 'sex': 'male'}, {'name': 'lolo', 'age': 11, 'sex': 'female'}, {'name': 'lolo', 'age': 18, 'sex': 'female'}]
+```
+
+## 数据类型分类
+
+按照不同的属性与不同的操作方式来对数据类型进行区分。
+
+#### 按顺序分类：
+
+- 直接访问：数字
+- 有序：字符串、列表、元组
+- 无序（映射类型）：字典、集合
+
+#### 按存值个数分类：
+
+- 只存一个值（标量/原子类型）：数字、字符串
+- 存放多个值（容器类型）：列表、元组、字典、集合
+
+#### 按可变不可变分类：
+
+- 可变类型：列表、字典、集合
+- 不可变类型：数字、字符串、元组
