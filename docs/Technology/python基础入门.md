@@ -1519,4 +1519,55 @@ print(new_l);
 3. a只追加写模式
 4. +：r+、w+、a+
 
+### 文件操作流程
 
+1. 打开文件
+2. 操作（读/写）文件
+3. 关闭文件
+
+#### 文件路径
+
+1. 绝对路径
+例如：`c:\zyf\doument`
+2. 相对路径
+从当前文件来确定另一个文件的相对位置。
+
+案例1：读取文件
+```python
+# 打开文件
+f = open('test.txt')
+# 操作文件（读写）
+res = f.read()
+print(res)
+# 关闭文件
+f.close()  # 回收操作系统资源
+# del f   回收应用程序资源 这一步可以省略，python内部会处理
+# with 上下文管理
+# 文件对象又称文件句柄
+with open('test1.txt') as f1:
+    res1 = f1.read()
+    print(res1)
+
+输出结果：
+this is a test text.
+this is a test txt
+```
+
+#### 指定字符编码
+
+```python
+with open('test2.txt', mode='rt', encoding='utf-8') as f2:
+    res = f2.read()
+    print(res, type(res))
+```
+
+#### rt模式
+
+默认的操作模式：只读模式
+
+- 文件不存在时会报错
+- 当文件存在时，文件指针跳到最开始位置。
+
+#### wt模式
+
+#### at模式
